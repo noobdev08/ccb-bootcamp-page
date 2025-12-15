@@ -1,0 +1,134 @@
+@import url('./reset.css');
+
+.site-footer {
+    background-color: var(--blue-black);
+    color: var(--white);
+    padding: 60px 8%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.footer-logo {
+    width: 203px;
+    height: 57px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid white;
+}
+
+.footer-brand {
+    max-width: 350px;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    text-decoration: none;
+    color: inherit;
+}
+
+.footer-logo-img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    background-color: var(--primary-yellow);
+}
+
+.footer-logo-text {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: var(--text-color);
+}
+
+.footer-mission {
+    font-size: 0.95rem;
+    color: var(--link-color);
+}
+
+.footer-heading {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+.follow {
+    margin-bottom: 10px;
+}
+
+.footer-links-group ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links-group li {
+    margin-bottom: 12px;
+}
+
+.footer-links-group a {
+    color: var(--link-color);
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: color 0.2s;
+}
+
+.footer-links-group a:hover {
+    color: var(--primary-yellow);
+}
+
+.footer-social-icons {
+    display: flex;
+    gap: 1rem;
+}
+
+.social-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 30px;
+    font-size: 16px;
+}
+
+.footer-legal-links a {
+    color: var(--white);
+    text-decoration: none;
+    margin-left: 30px;
+    transition: color 0.2s;
+}
+
+.footer-legal-links a:hover {
+    color: var(--primary-yellow);
+}
+
+@media (max-width: 900px) {
+    .footer-content {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .footer-brand {
+        max-width: 100%;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .footer-legal-links a {
+        margin-left: 0;
+        margin-right: 20px;
+    }
+}
