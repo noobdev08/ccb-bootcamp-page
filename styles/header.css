@@ -21,6 +21,12 @@
 .header-list a {
     text-decoration: none;
     color: var(--white);
+    transition: 0.3s;
+}
+
+.header-list a:hover {
+    color: var(--primary-yellow);
+    border-bottom: 1px solid var(--primary-yellow);
 }
 
 .header-logo {
