@@ -9,7 +9,8 @@
 
 .header-list {
     display: flex;
-    gap: 100px;
+    justify-content: space-between;
+    width: 496px;
 }
 
 .header-list li {
