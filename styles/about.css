@@ -1,9 +1,0 @@
-@import url('./reset.css'); /*Global Reset CSS file*/
-@import url('./header.css');/*Importing header styles*/
-@import url('./footer.css'); /*Importing footer styles*/
-
-body {
-    display: flex;
-    flex-direction: column;
-    font-family: 'Montserrat', sans-serif;
-}
