@@ -96,6 +96,7 @@ body {
 .values-text {
     font-size: 48px;
     text-align: center;
+    color: var(--blue-black);
 }
 
 .values-grid {
@@ -154,6 +155,129 @@ body {
     position: absolute;
     background-color: var(--light-yellow);
     bottom: -106%;
+}
+
+/*===== MENTORS STYLES =====*/
+.mentors {
+    display: flex;
+    padding: 100px;
+    gap: 5rem;
+    background-color: var(--light-yellow);
+}
+
+.mentors .first {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 1rem;
+}
+
+.mentors .main-text{
+    width: 737px;
+    height: 177px;
+    font-size: 48px;
+    text-align: right;
+    color: var(--blue-black);
+}
+
+.mentors .sub-text {
+    font-size: 24px;
+    width: 602px;
+    text-align: right;
+}
+
+.mentors .icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.icons .icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid black;
+    padding-right: 1rem;
+}
+
+.icons .icon img{
+    width: 52px;
+}
+
+.icon h2 {
+    font-size: 48px;
+}
+
+.mentors .img {
+    width: 425px;
+    height: 566px;
+    background-image: url(../assets/Images/group-people.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+/*===== TOP OVERLAY STYLE =====*/
+.top-overlap {
+    width: 196px;
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0 4px 4px 0 rgba(0,0,0,0.1);
+    position: absolute;
+    top: -30px;
+    left: -50px;
+}
+
+.top-overlap p {
+    text-align: center;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.top-overlap div {
+    background-color: var(--primary-blue);
+    color: var(--white);
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/*===== BOTTOM OVERLAY STYLE =====*/
+.bottom-overlap {
+    display: flex;
+    position: absolute;
+    background-color: var(--white);
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px 0 rgba(0,0,0,0.1);
+    gap: 10px;
+    right: -50px;
+    width: 175px;
+    height: 52px;
+    bottom: -20px;
+}
+
+.bottom-overlap .ball {
+    width: 25px;
+    height: 25px;
+    filter: blur(4px);
+    background-color: var(--light-blue);
+}
+
+.bottom-overlap .main {
+    font-weight: 600;
+}
+
+.bottom-overlap p {
+    font-size: 15px;
 }
 
 /*===== MOBILE STYLES =====*/
@@ -235,5 +359,65 @@ body {
 
     .elipse {
         display: none;
+    }
+
+    .mentors {
+        flex-direction: column-reverse;
+        padding: 40px 20px;
+        gap: 3rem;
+        align-items: center;
+    }   
+
+    .mentors .first {
+        align-items: center;
+        text-align: center;
+        width: 100%;
+    }
+
+    .mentors .main-text {
+        width: 100%;
+        height: auto;
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .mentors .sub-text {
+        width: 100%;
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .mentors .icons {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1.5rem;
+        margin-top: 20px;
+    }
+
+    .icons .icon {
+        border-right: none;
+        padding-right: 0;
+        min-width: 100px;
+    }
+
+    .icon h2 {
+        font-size: 32px;
+    }
+
+    .mentors .img {
+        width: 100%;
+        max-width: 320px;
+        height: 400px;
+        background-position: center;
+    }
+
+    .top-overlap {
+        left: 0;
+        top: -20px;
+    }
+
+    .bottom-overlap {
+        right: 0;
+        bottom: -10px;
     }
 }
