@@ -62,10 +62,14 @@ body {
 }
 
 /*===== CORE VALUES STYLES =====*/
-.core-values {
+#core-values {
     width: 1544px;
     height: 1052px;
-    background-image: url(../assets/Images/);
+    background-image: url(../assets/Images/valuesBG.png);
+    background-color: var(--primary-yellow);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 
