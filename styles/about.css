@@ -63,13 +63,17 @@ body {
 
 /*===== CORE VALUES STYLES =====*/
 #core-values {
-    width: 1544px;
+    width: 100%;
     height: 1052px;
     background-image: url(../assets/Images/valuesBG.png);
     background-color: var(--primary-yellow);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .values-text {
@@ -83,7 +87,6 @@ body {
     justify-content: center;
     gap: 20px;
     padding: 20px;
-    margin: 0 auto;
 }
 
 .value-card {
@@ -93,6 +96,14 @@ body {
     width: 391px; 
     height: 263px;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.value-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 20px rgba(0,0,0,0.15);
+    background-color: #e3effa;
 }
 
 .value-img {
@@ -108,6 +119,14 @@ body {
 
 .value-img img {
     width: 25px;
+}
+
+.value-card h3 {
+    font-size: 28px;
+}
+
+.value-card p {
+    line-height: 24px;
 }
 
 /*===== MOBILE STYLES =====*/
@@ -160,5 +179,30 @@ body {
 
     .graphic-column {
         height: 20rem;
+    }
+
+    #core-values {
+        height: auto;
+        padding: 40px 20px;
+    }
+
+    .values-text {
+        font-size: 32px;
+    }
+
+    .values-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .value-card {
+        width: 100%;
+        max-width: 400px;
+        min-height: auto;
+        padding: 20px;
+    }
+
+    .value-card h3 {
+        font-size: 24px;
     }
 }
