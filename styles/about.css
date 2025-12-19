@@ -72,7 +72,43 @@ body {
     background-size: cover;
 }
 
+.values-text {
+    font-size: 48px;
+    text-align: center;
+}
 
+.values-grid {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+.value-card {
+    background-color: #dbe9f4;
+    border-radius: 15px;
+    padding: 25px;
+    width: 391px; 
+    height: 263px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.value-img {
+    background: #0b2d49;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.value-img img {
+    width: 25px;
+}
 
 /*===== MOBILE STYLES =====*/
 @media (max-width: 768px) {
