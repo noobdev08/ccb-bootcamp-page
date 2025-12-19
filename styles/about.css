@@ -58,6 +58,21 @@ body {
     height: 356px;
 }
 
+.graphic-column-1 {
+    background-image: url(../assets/Images/aboutUS-BG.png);
+    background-position: center;
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.graphic-column-2 {
+    background-image: url(../assets/Images/visionBG.png);
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 .reverse {
     flex-direction: row-reverse;
     text-align: end;
