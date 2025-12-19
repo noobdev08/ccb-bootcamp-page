@@ -61,6 +61,16 @@ body {
     text-align: end;
 }
 
+/*===== CORE VALUES STYLES =====*/
+.core-values {
+    width: 1544px;
+    height: 1052px;
+    background-image: url(../assets/Images/);
+}
+
+
+
+/*===== MOBILE STYLES =====*/
 @media (max-width: 768px) {
     .about-us {
         padding: 30px 20px;
