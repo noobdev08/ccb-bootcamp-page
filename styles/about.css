@@ -294,6 +294,7 @@ body {
 .team h2 {
     font-size: 48px;
     color: var(--white);
+    margin-bottom: 2rem;
 }
 
 /*===== TEAM CARD STYLES =====*/
@@ -489,5 +490,29 @@ body {
     .bottom-overlap {
         right: 0;
         bottom: -10px;
+    }
+
+    .card1 {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .teamCard {
+        width: 95%;
+        max-width: 350px;
+        height: 380px;
+    }
+
+    .teamCard .banner {
+        bottom: -20px;
+        right: -20px;
+        align-items: center;
+        transform: rotateZ(0deg);
+    }
+
+    .team h2 {
+        text-align: center;
+        font-size: 40px;
     }
 }
