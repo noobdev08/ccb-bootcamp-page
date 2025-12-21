@@ -284,10 +284,16 @@ body {
 .team {
     width: 100%;
     height: 1440px;
+    background-color: var(--primary-blue);
+    background-image: url(../assets/Images/teamBG.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 41px 77px;
 }
 
-.team {
+.team h2 {
     font-size: 48px;
+    color: var(--white);
 }
 
 /*===== MOBILE STYLES =====*/
