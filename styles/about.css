@@ -301,7 +301,7 @@ body {
     width: 390px;
     height: 408px;
     border-radius: 10px;
-    background-color: var(--light-blue);
+    background-color: var(--soft-blue);
     position: relative;
 }
 
@@ -313,36 +313,42 @@ body {
     position: absolute;
     bottom: 0;
     right: 160.78px;
-    transform: rotateZ(7.54deg)
+    transform: rotateZ(7.54deg);
 }
 
 .teamCard .name {
-    width: 257px;
     height: 64px;
     background-color: var(--deep-navy);
     border-radius: 10px;
     padding: 15px 40px;
     color: var(--white);
-    font-size: 23px;
+    font-size: 24px;
     box-shadow: 0px 6px 4px 0px rgba(0, 0, 0, 0.25);
     font-weight: 600;
     display: flex;
     justify-content: center;
     align-items: center;
+    white-space: nowrap;
+    z-index: 10;
 }
 
 .teamCard .role {
     padding: 10px 30px;
-    width: 207px;
     height: 44px;
     background-color: var(--primary-yellow);
-    font-size: 24px;
+    font-size: 16px;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 10px;
+    white-space: nowrap;
+    margin-top: -10px;
 }
 
+.card1 {
+    display: flex;
+    justify-content: space-evenly;
+}
 
 /*===== MOBILE STYLES =====*/
 @media (max-width: 768px) {

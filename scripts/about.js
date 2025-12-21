@@ -71,4 +71,8 @@ function createTeamCard(containerSelector, personName, personRole){
     container.insertAdjacentHTML('beforeend', htmlContent);
 }
 
-createTeamCard(".card1", "Oko Patricia", "Team Lead");
+createTeamCard(".card1", "Oko Patricia", "Program Manager");
+
+createTeamCard(".card1", "Adina Destiny", "Social Media Manager")
+
+createTeamCard(".card1", "Duru Ogochukuwu", "Community Manager")
