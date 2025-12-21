@@ -51,3 +51,7 @@ function createValueCards(containerSelector, data) {
 }
 
 createValueCards('.values-grid', coreValuesData);
+
+function createTeamCard(){
+    
+}
