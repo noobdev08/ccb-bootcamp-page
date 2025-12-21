@@ -295,6 +295,7 @@ body {
     font-size: 48px;
     color: var(--white);
     margin-bottom: 2rem;
+    text-align: center;
 }
 
 /*===== TEAM CARD STYLES =====*/
