@@ -52,6 +52,23 @@ function createValueCards(containerSelector, data) {
 
 createValueCards('.values-grid', coreValuesData);
 
-function createTeamCard(){
-    
+function createTeamCard(containerSelector, personName, personRole){
+    const container = document.querySelector(containerSelector);
+
+    const htmlContent = `
+        <div class="teamCard">
+            <div class="banner">
+                <div class="name">
+                    <h3>${personName}</h3>
+                </div>
+                <div class="role">
+                    <p>${personRole}</p>
+                </div> 
+            </div>
+        </div>
+    `
+
+    container.insertAdjacentHTML('beforeend', htmlContent);
 }
+
+createTeamCard(".card1", "Oko Patricia", "Team Lead");
