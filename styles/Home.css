@@ -143,7 +143,7 @@ padding:20px 0;
     display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 25px;
-  max-width: 1400px;
+  max-width: auto;
   margin:4% 100px;
  }
 
@@ -189,7 +189,7 @@ padding:20px 0;
     display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 25px;
-  max-width: 1400px;
+  max-width: auto;
   margin:4% 100px;
  }
 
@@ -199,7 +199,6 @@ padding:20px 0;
   box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.05);
   transition: transform 0.2s;
       overflow: hidden;
-
  }
 
  .mini{
@@ -294,3 +293,83 @@ padding:20px 0;
  #benefits h3{
     margin: 6%;
  }
+
+ .testimony{
+   display:flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   margin: 5% 0;
+ }
+
+ .testimony h1{
+    font-size: 45px;
+    font-weight: bold;
+   margin:2% 0 1% 0;
+ }
+
+ .testimony p{
+   font-size: 26px;
+
+ }
+
+ .testimonial-card{
+   background-image: url(../assets/Images/bg2.png);
+   background-color: var(--primary-blue);
+   color: white;
+   display: flex;
+   margin: 5% 100px 0 100px;
+   border-radius: 10px;
+   padding:1% 2% 1% 1%;
+   gap:3%;
+}
+
+#userImage{
+   width: 321px;;
+   height:328px;
+   border-radius:5%;
+}
+
+#userText{
+   margin: 2% 3% 5% 0;
+   font-size:23px;
+   line-height: 32px;
+}
+
+#userName{
+   font-size:22px;
+   margin-bottom: 2%;
+}
+
+.profile{
+   display:flex;
+   gap: 7%;
+}
+
+.profile h4{
+   font-size: 18px;
+}
+
+.profile span{
+   color: var(--primary-yellow);
+   text-decoration: underline;
+   font-size: 18px;
+}
+
+#prev,#next {
+  position: absolute;
+  background: var(--primary-yellow);
+  color:black;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+#prev {
+   right:95%;
+}
+#next {
+   left:95%;
+}
+
