@@ -8,6 +8,21 @@ export function createFooter(containerId = "footer-container") {
 
     container.innerHTML = `
         <footer class="site-footer">
+
+        <section class="update">
+            <div class="update-content">
+            <h1>Stay Updated</h1> 
+            <p>Get notified about new cohorts, events, and  <br> important updates.</p>
+            </div>
+
+            <div class="update-email"> 
+            <form action="">
+                <input type="email" name="email" id="email" placeholder="Enter your email address">
+                <button type="submit">Subscribe</button>
+            </form>
+            </<div>
+        </section>
+
             <div class="footer-content">
                 <div class="footer-brand">
                     <img src="./assets/images/logo.png" alt="Bootcamp logo" class="footer-logo"/>
