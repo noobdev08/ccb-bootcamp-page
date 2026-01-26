@@ -52,11 +52,12 @@ function createValueCards(containerSelector, data) {
 
 createValueCards('.values-grid', coreValuesData);
 
-function createTeamCard(containerSelector, personName, personRole){
+function createTeamCard(containerSelector, personName, personRole, customClass = ''){
     const container = document.querySelector(containerSelector);
-
+    
+    const classAttr = customClass ? ` class="${customClass}"` : '';
     const htmlContent = `
-        <div class="teamCard">
+        <div class="teamCard"${classAttr}>
             <div class="banner">
                 <div class="name">
                     <h3>${personName}</h3>
@@ -70,3 +71,14 @@ function createTeamCard(containerSelector, personName, personRole){
 
     container.insertAdjacentHTML('beforeend', htmlContent);
 }
+
+createTeamCard('.card1', 'Oko Patricia', 'Program Manager');
+createTeamCard('.card1', 'Adina Destiny', 'Social Media Manager');
+createTeamCard('.card1', 'Dura Ogochukwu', 'Community Manager');
+
+// Instructors
+createTeamCard('.instructors', 'Habibu Haruna', 'Web Development');
+createTeamCard('.instructors', 'George Babalola', 'Product Design');
+createTeamCard('.instructors', 'Loretta Anyika', 'Data Analysis');
+createTeamCard('.instructors', 'Instructor\'s Name', '3D Animation');
+createTeamCard('.instructors', 'Veloria Igweogu', 'Product Management');

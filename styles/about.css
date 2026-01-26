@@ -1,6 +1,9 @@
-@import url('./reset.css'); /*Global Reset CSS file*/
-@import url('./header.css');/*Importing header styles*/
-@import url('./footer.css'); /*Importing footer styles*/
+@import url('./reset.css');
+/*Global Reset CSS file*/
+@import url('./header.css');
+/*Importing header styles*/
+@import url('./footer.css');
+/*Importing footer styles*/
 
 body {
     display: flex;
@@ -101,7 +104,7 @@ body {
 
 .values-grid {
     display: flex;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
     padding: 20px;
@@ -111,16 +114,16 @@ body {
     background-color: #dbe9f4;
     border-radius: 15px;
     padding: 25px;
-    width: 391px; 
+    width: 391px;
     height: 263px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     cursor: pointer;
 }
 
 .value-card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 12px 20px rgba(0,0,0,0.15);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
     background-color: #e3effa;
 }
 
@@ -172,7 +175,7 @@ body {
     gap: 1rem;
 }
 
-.mentors .main-text{
+.mentors .main-text {
     width: 737px;
     height: 177px;
     font-size: 48px;
@@ -202,7 +205,7 @@ body {
     padding-right: 1rem;
 }
 
-.icons .icon img{
+.icons .icon img {
     width: 52px;
 }
 
@@ -227,7 +230,7 @@ body {
     flex-direction: column;
     padding: 8px;
     border-radius: 0 0 10px 10px;
-    box-shadow: 0 4px 4px 0 rgba(0,0,0,0.1);
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1);
     position: absolute;
     top: -30px;
     left: -50px;
@@ -257,7 +260,7 @@ body {
     align-items: center;
     padding: 8px;
     border-radius: 10px;
-    box-shadow: 0px 4px 4px 0 rgba(0,0,0,0.1);
+    box-shadow: 0px 4px 4px 0 rgba(0, 0, 0, 0.1);
     gap: 10px;
     right: -50px;
     width: 175px;
@@ -283,18 +286,18 @@ body {
 /*===== TEAM STYLES =====*/
 .team {
     width: 100%;
-    height: 1440px;
     background-color: var(--primary-blue);
     background-image: url(../assets/Images/teamBG.png);
     background-repeat: no-repeat;
     background-size: cover;
     padding: 41px 77px;
+    position: relative;
+    padding-bottom: 200px;
 }
 
 .team h2 {
     font-size: 48px;
     color: var(--white);
-    margin-bottom: 2rem;
 }
 
 .team-header {
@@ -316,9 +319,9 @@ body {
 }
 
 .hr-tags hr {
-   width: 100%;
-   outline: none;
-   border: 1px solid var(--primary-yellow);
+    width: 100%;
+    outline: none;
+    border: 1px solid var(--primary-yellow);
 }
 
 .hr-tags hr:last-of-type {
@@ -359,6 +362,7 @@ body {
     bottom: 0;
     right: 160.78px;
     transform: rotateZ(7.54deg);
+    left: -50px;
 }
 
 .teamCard .name {
@@ -392,7 +396,42 @@ body {
 
 .card1 {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+.demacation {
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+    gap: 2rem;
+}
+
+.demacation hr {
+    width: 100%;
+    border-bottom: 1px solid var(--primary-yellow);
+}
+
+.demacation h3 {
+    color: var(--white);
+    font-size: 28px;
+}
+
+.instructors {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.elipse-png {
+    width: 100%;
+    display: block;
+    position: relative;
+    z-index: 10;
+    margin-top: -320px;
+    margin-bottom: 0;
+    height: 341px;
 }
 
 /*===== MOBILE STYLES =====*/
@@ -412,7 +451,7 @@ body {
         width: 100%;
         min-width: 100%;
     }
-    
+
     .about-text {
         font-size: 40px;
         padding-left: 0 !important;
@@ -425,7 +464,7 @@ body {
         height: auto;
         font-size: 18px;
     }
-    
+
     .text-column {
         text-align: center !important;
     }
@@ -481,7 +520,7 @@ body {
         padding: 40px 20px;
         gap: 3rem;
         align-items: center;
-    }   
+    }
 
     .mentors .first {
         align-items: center;
@@ -558,5 +597,64 @@ body {
     .team h2 {
         text-align: center;
         font-size: 40px;
+    }
+
+    .team {
+        padding: 40px 20px 60px 20px;
+    }
+
+    .team-header {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .left-header {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hr-tags {
+        display: none;
+    }
+
+    .dreamwork {
+        justify-content: center;
+    }
+
+    .dreamwork h3 {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .right-header {
+        width: 100%;
+        text-align: center;
+        font-size: 14px;
+    }
+
+    .demacation {
+        margin-top: 3rem;
+        justify-content: center;
+    }
+
+    .demacation hr {
+        display: none;
+    }
+
+    .demacation h3 {
+        font-size: 30px;
+        text-decoration: underline;
+    }
+
+    .instructors {
+        grid-template-columns: 1fr;
+        justify-items: center;
+        gap: 50px;
+    }
+
+    .elipse-png {
+        display: none;
     }
 }
