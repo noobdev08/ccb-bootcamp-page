@@ -288,6 +288,8 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     padding: 41px 77px;
+    position: relative;
+    padding-bottom: 200px;
 }
 
 .team h2 {
@@ -417,6 +419,16 @@ body {
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
     margin-top: 2rem;
+}
+
+.elipse-png {
+    width: 100%;
+    display: block;      
+    position: relative;  
+    z-index: 10;     
+    margin-top: -320px; 
+    margin-bottom: 0;  
+    height: 341px;
 }
 
 /*===== MOBILE STYLES =====*/
