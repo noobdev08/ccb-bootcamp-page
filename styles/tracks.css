@@ -1,3 +1,41 @@
 @import url("./reset.css");
 @import url("./header.css");
 @import url("./footer.css");
+
+main {
+  font-family: "Montserrat";
+
+  .track-hero {
+    background: linear-gradient(
+      135deg,
+      var(--primary-blue) 0%,
+      var(--deep-navy) 60%,
+      var(--primary-blue) 100%
+    );
+    color: var(--white);
+    padding: 4rem 2rem;
+    min-height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    .track-hero-content {
+      max-width: 50rem;
+
+      h1 {
+        color: var(--primary-yellow);
+        font-size: 2rem;
+        margin-bottom: 1rem;
+      }
+    }
+  }
+}
+
+@media (min-width: 48rem) {
+  .track-hero-content {
+    h1 {
+      font-size: 3rem;
+    }
+  }
+}
