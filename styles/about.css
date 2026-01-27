@@ -294,7 +294,6 @@ body {
 .team h2 {
     font-size: 48px;
     color: var(--white);
-    margin-bottom: 2rem;
 }
 
 .team-header {
@@ -392,7 +391,8 @@ body {
 
 .card1 {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    margin-top: 2rem;
 }
 
 /*===== MOBILE STYLES =====*/
