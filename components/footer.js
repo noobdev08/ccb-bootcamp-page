@@ -21,7 +21,7 @@ export function createFooter(containerId = "footer-container") {
                     <ul>
                         <li><a href="#">Home</a></li>
                         <li><a href="#">About</a></li>
-                        <li><a href="/track.html">Tracks</a></li>
+                        <li><a href="/tracks.html">Tracks</a></li>
                         <li><a href="#">Admissions</a></li>
                         <li><a href="#">Announcements</a></li>
                         <li><a href="#">Testimonials</a></li>
