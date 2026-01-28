@@ -1,9 +1,9 @@
 import { createHeader } from "../components/header.js";
-import { createFooter } from "../components/footer.js";
+import { createShowcaseFooter } from "../components/footerShowcase.js";
 import { tracksData } from "../components/tracks.js";
 
 createHeader("header");
-createFooter("footer-container");
+createShowcaseFooter("footer-showcase-container");
 
 
 const tracksContainer = document.getElementById("tracks-container");
