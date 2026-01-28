@@ -15,7 +15,7 @@ main {
 /* =========================
    Hero Section
 ========================= */
-main .track-hero {
+.track-hero {
   background: linear-gradient(
     135deg,
     var(--primary-blue) 0%,
@@ -31,40 +31,40 @@ main .track-hero {
   text-align: center;
 }
 
-main .track-hero .track-hero-content {
+.track-hero .track-hero-content {
   max-width: 52rem;
 }
 
-main .track-hero .track-hero-content h1 {
+.track-hero .track-hero-content h1 {
   color: var(--primary-yellow);
   font-size: 2rem;
   margin-bottom: 1rem;
 }
 
-main .track-hero .track-hero-content p {
+.track-hero .track-hero-content p {
   line-height: 1.2;
 }
 
 /* =========================
    Tracks Section
 ========================= */
-main .tracks-section {
+.tracks-section {
   background-color: var(--off-white);
   padding: 4rem 1.5rem 5rem;
 }
 
-main .tracks-section .tracks-card-section {
+.tracks-section .tracks-card-section {
   max-width: 1100px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
+  grid-template-columns: 1fr;
   gap: 2rem;
 }
 
 /* =========================
    Track Card
 ========================= */
-main .track-card {
+.track-card {
   background-color: #ffffff;
   border: 1px solid rgba(14, 47, 94, 0.08);
   border-radius: 1rem;
@@ -76,7 +76,7 @@ main .track-card {
   transition: all 220ms ease;
 }
 
-main .track-card:hover {
+.track-card:hover {
   transform: translateY(-3px);
   box-shadow: 0 2rem 3.5rem rgba(15, 54, 111, 0.14);
 }
@@ -84,23 +84,23 @@ main .track-card:hover {
 /* =========================
    Card Header
 ========================= */
-main .track-card-header span {
+.track-card-header span {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 1rem;
 }
 
-main .track-card-header span h3 {
+.track-card-header span h3 {
   font-size: 1.5rem;
   color: var(--primary-blue);
 }
 
-main .track-card-header span img {
+.track-card-header span img {
   width: 2.5rem;
 }
 
-main .track-card-header p {
+.track-card-header p {
   font-size: 0.9rem;
   line-height: 1.4;
   color: var(--deep-navy);
@@ -109,20 +109,20 @@ main .track-card-header p {
 /* =========================
    Card Sections
 ========================= */
-main .track-card-section h4 {
+.track-card-section h4 {
   font-weight: 600;
   color: var(--primary-blue);
   margin-bottom: 0.75rem;
 }
 
-main .track-card-section .track-card-list {
+.track-card-section .track-card-list {
   font-size: 0.85rem;
   padding-left: 1.25rem;
   line-height: 1.6;
   color: var(--deep-navy);
 }
 
-main .track-card-section p {
+.track-card-section p {
   font-size: 0.9rem;
   color: var(--deep-navy);
   line-height: 1.4;
@@ -131,18 +131,18 @@ main .track-card-section p {
 /* =========================
    Card Footer
 ========================= */
-main .track-card-footer {
+.track-card-footer {
   display: flex;
   flex-direction: column;
   gap: 1rem;
 }
 
-main .track-card-footer .track-card-duration {
+.track-card-footer .track-card-duration {
   font-weight: 600;
   color: var(--deep-navy);
 }
 
-main .track-card-footer .apply {
+.track-card-footer .apply {
   border: transparent;
   border-radius: 0.8rem;
   background: var(--primary-yellow);
@@ -154,13 +154,11 @@ main .track-card-footer .apply {
   transition: background 180ms ease;
 }
 
-main .track-card-footer .apply:hover {
+.track-card-footer .apply:hover {
   background: var(--deep-navy);
 }
 
-/* =========================
-   Media Queries
-========================= */
+
 @media (min-width: 48rem) {
   .track-hero-content h1 {
     font-size: 3rem;
@@ -168,6 +166,10 @@ main .track-card-footer .apply:hover {
 
   img {
     width: 3.5rem;
+  }
+
+  .tracks-section .tracks-card-section {
+    grid-template-columns: repeat(2, minmax(22rem, 1fr));
   }
 }
 
