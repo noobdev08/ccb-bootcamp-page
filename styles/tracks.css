@@ -1,12 +1,11 @@
 @import url("./reset.css");
 @import url("./header.css");
-@import url("./footer.css");
+@import url("./footerShowcase.css");
 
 /* =========================
    Base
 ========================= */
 main {
-  font-family: "Montserrat", "Segoe UI", sans-serif;
   color: var(--deep-navy);
   font-size: 1rem;
   background-color: var(--off-white);
