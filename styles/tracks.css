@@ -1,150 +1,174 @@
 @import url("./reset.css");
 @import url("./header.css");
-@import url("./footer.css");
+@import url("./footerShowcase.css");
 
+/* =========================
+   Base
+========================= */
 main {
-  font-family: "Montserrat", "Segoe UI", sans-serif;
   color: var(--deep-navy);
   font-size: 1rem;
   background-color: var(--off-white);
-
-  .track-hero {
-    background: linear-gradient(
-      135deg,
-      var(--primary-blue) 0%,
-      var(--deep-navy) 60%,
-      var(--primary-blue) 100%
-    );
-    color: var(--white);
-    padding: 5rem 2rem;
-    min-height: 50vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-
-    .track-hero-content {
-      max-width: 52rem;
-
-      h1 {
-        color: var(--primary-yellow);
-        font-size: 2rem;
-        margin-bottom: 1rem;
-      }
-
-      p {
-        line-height: 1.2;
-      }
-    }
-  }
-
-  .tracks-section {
-    background-color: var(--off-white);
-    padding: 4rem 1.5rem 5rem;
-
-    .tracks-card-section {
-      max-width: 1100px;
-      margin: 0 auto;
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
-      gap: 2rem;
-
-      .track-card {
-        background-color: #ffffff;
-        border: 1px solid rgba(14, 47, 94, 0.08);
-        border-radius: 1rem;
-        padding: 2rem 1.3rem;
-        display: flex;
-        flex-direction: column;
-        gap: 1.5rem;
-        box-shadow: 0 1.5rem 3rem rgba(15, 54, 111, 0.08);
-        transition: all 220ms ease;
-
-        &:hover {
-          transform: translateY(-3px);
-          box-shadow: 0 2rem 3.5rem rgba(15, 54, 111, 0.14);
-        }
-
-        .track-card-header {
-          span {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 1rem;
-
-            h3 {
-              font-size: 1.5rem;
-              color: var(--primary-blue);
-            }
-            img {
-              width: 2.5rem;
-            }
-          }
-
-          p {
-            font-size: 0.9rem;
-            line-height: 1.4;
-            color: var(--deep-navy);
-          }
-        }
-
-        .track-card-section {
-          h4 {
-            font-weight: 600;
-            color: var(--primary-blue);
-            margin-bottom: 0.75rem;
-          }
-
-          .track-card-list {
-            font-size: 0.85rem;
-            padding-left: 1.25rem;
-            line-height: 1.6;
-            color: var(--deep-navy);
-          }
-
-          p {
-            font-size: 0.9rem;
-            color: var(--deep-navy);
-            line-height: 1.4;
-          }
-        }
-
-        .track-card-footer {
-          display: flex;
-          flex-direction: column;
-          gap: 1rem;
-          .track-card-duration {
-            font-weight: 600;
-            color: var(--deep-navy);
-          }
-
-          .apply {
-            border: transparent;
-            border-radius: 0.8rem;
-            background: var(--primary-yellow);
-            color: var(--light-yellow);
-            font-weight: 700;
-            padding: 0.85rem 1.75rem;
-            align-self: center;
-            cursor: pointer;
-            transition: background 180ms ease;
-
-            &:hover {
-              background: var(--deep-navy);
-            }
-          }
-        }
-      }
-    }
-  }
 }
+
+/* =========================
+   Hero Section
+========================= */
+.track-hero {
+  background: linear-gradient(
+    135deg,
+    var(--primary-blue) 0%,
+    var(--deep-navy) 60%,
+    var(--primary-blue) 100%
+  );
+  color: var(--white);
+  padding: 5rem 2rem;
+  min-height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.track-hero .track-hero-content {
+  max-width: 52rem;
+}
+
+.track-hero .track-hero-content h1 {
+  color: var(--primary-yellow);
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.track-hero .track-hero-content p {
+  line-height: 1.2;
+}
+
+/* =========================
+   Tracks Section
+========================= */
+.tracks-section {
+  background-color: var(--off-white);
+  padding: 4rem 1.5rem 5rem;
+}
+
+.tracks-section .tracks-card-section {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+/* =========================
+   Track Card
+========================= */
+.track-card {
+  background-color: #ffffff;
+  border: 1px solid rgba(14, 47, 94, 0.08);
+  border-radius: 1rem;
+  padding: 2rem 1.3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  box-shadow: 0 1.5rem 3rem rgba(15, 54, 111, 0.08);
+  transition: all 220ms ease;
+}
+
+.track-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 2rem 3.5rem rgba(15, 54, 111, 0.14);
+}
+
+/* =========================
+   Card Header
+========================= */
+.track-card-header span {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.track-card-header span h3 {
+  font-size: 1.5rem;
+  color: var(--primary-blue);
+}
+
+.track-card-header span img {
+  width: 2.5rem;
+}
+
+.track-card-header p {
+  font-size: 0.9rem;
+  line-height: 1.4;
+  color: var(--deep-navy);
+}
+
+/* =========================
+   Card Sections
+========================= */
+.track-card-section h4 {
+  font-weight: 600;
+  color: var(--primary-blue);
+  margin-bottom: 0.75rem;
+}
+
+.track-card-section .track-card-list {
+  font-size: 0.85rem;
+  padding-left: 1.25rem;
+  line-height: 1.6;
+  color: var(--deep-navy);
+}
+
+.track-card-section p {
+  font-size: 0.9rem;
+  color: var(--deep-navy);
+  line-height: 1.4;
+}
+
+/* =========================
+   Card Footer
+========================= */
+.track-card-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.track-card-footer .track-card-duration {
+  font-weight: 600;
+  color: var(--deep-navy);
+}
+
+.track-card-footer .apply {
+  border: transparent;
+  border-radius: 0.8rem;
+  background: var(--primary-yellow);
+  color: var(--light-yellow);
+  font-weight: 700;
+  padding: 0.85rem 1.75rem;
+  align-self: center;
+  cursor: pointer;
+  transition: background 180ms ease;
+}
+
+.track-card-footer .apply:hover {
+  background: var(--deep-navy);
+}
+
 
 @media (min-width: 48rem) {
   .track-hero-content h1 {
     font-size: 3rem;
   }
+
   img {
     width: 3.5rem;
+  }
+
+  .tracks-section .tracks-card-section {
+    grid-template-columns: repeat(2, minmax(22rem, 1fr));
   }
 }
 
