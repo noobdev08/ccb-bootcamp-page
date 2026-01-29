@@ -51,7 +51,7 @@ export function createShowcaseFooter(containerId = "footer-showcase-container") 
             <li><a href="/tracks.html">Tracks</a></li>
             <li><a href="#">Admissions</a></li>
             <li><a href="#">Announcements</a></li>
-            <li><a href="#">Testimonials</a></li>
+            <li><a href="/testimonial.html">Testimonials</a></li>
           </ul>
         </div>
 
