@@ -1,4 +1,7 @@
 import { testimonialsData } from "../components/bootcampData.js";
+import { createShowcaseFooter } from "../components/footerShowcase.js";
+
+createShowcaseFooter("footer-showcase-container");
 
 // const container = document.getElementById("testimonials");
 
