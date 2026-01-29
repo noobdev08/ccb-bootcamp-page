@@ -1,10 +1,9 @@
 import { createHeader } from "../components/header.js";
 import { createShowcaseFooter } from "../components/footerShowcase.js";
-import { tracksData } from "../components/tracks.js";
+import { tracksData } from "../components/bootcampData.js";
 
 createHeader("header");
 createShowcaseFooter("footer-showcase-container");
-
 
 const tracksContainer = document.getElementById("tracks-container");
 

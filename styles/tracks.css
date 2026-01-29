@@ -14,7 +14,7 @@ main {
 /* =========================
    Hero Section
 ========================= */
-.track-hero {
+.hero-section {
   background: linear-gradient(
     135deg,
     var(--primary-blue) 0%,
@@ -30,17 +30,17 @@ main {
   text-align: center;
 }
 
-.track-hero .track-hero-content {
+.hero-section .hero-section-content {
   max-width: 52rem;
 }
 
-.track-hero .track-hero-content h1 {
+.hero-section .hero-section-content h1 {
   color: var(--primary-yellow);
   font-size: 2rem;
   margin-bottom: 1rem;
 }
 
-.track-hero .track-hero-content p {
+.hero-section .hero-section-content p {
   line-height: 1.2;
 }
 
