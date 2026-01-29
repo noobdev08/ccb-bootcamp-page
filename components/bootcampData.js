@@ -135,7 +135,7 @@ export const testimonialsData = [
     id: "jennifer-ekwuori",
     name: "Jennifer Okwueri",
     track: "Product Design",
-    avatar: "assets/Images/testimonials/jennifer.png",
+    avatar: "assets/testimonials/jennifer.jpg",
     quote:
       "Joining Code and Create Bootcamp is one of the best decisions you’ll ever make. From day one, you're guided by mentors who not only teach but genuinely care about your growth. The hands-on projects, collaborative environment, and career support push you beyond your limits.",
   },
@@ -143,7 +143,7 @@ export const testimonialsData = [
     id: "adun-nosakhare",
     name: "Adun Nosakhare",
     track: "Web Development",
-    avatar: "assets/Images/testimonials/adun.png",
+    avatar: "assets/testimonials/adun.jpg",
     quote:
       "Code and Create Bootcamp gave me the chance to revisit and truly understand HTML, CSS, and JavaScript. Through guided practice and real projects, I built the confidence and skills needed to tackle more advanced development work.",
   },
@@ -151,7 +151,7 @@ export const testimonialsData = [
     id: "hafsat-shuaibu",
     name: "Hafsat Shuaibu",
     track: "Data Analysis",
-    avatar: "assets/Images/testimonials/hafsat.png",
+    avatar: "assets/testimonials/hafsat.jpg",
     quote:
       "The Code & Create Bootcamp provided me with a solid foundation in data analysis through hands-on learning and structured mentorship. The one-on-one mentorship, soft skill webinars, and Career Week stood out.",
   },
@@ -159,7 +159,7 @@ export const testimonialsData = [
     id: "chinweike-david",
     name: "Chinweike David",
     track: "Web Development",
-    avatar: "assets/Images/testimonials/chinweike.png",
+    avatar: "assets/testimonials/chinweike.jpg",
     quote:
       "The Code and Create Bootcamp was a highly impactful experience. Over three months, I gained solid hands-on skills in web development through a well-structured and practical learning process.",
   },
@@ -167,7 +167,7 @@ export const testimonialsData = [
     id: "ibrahim-sofiyyah",
     name: "Ibrahim Sofiyyah",
     track: "Web Development",
-    avatar: "assets/Images/testimonials/ibrahim.png",
+    avatar: "assets/testimonials/ibrahim.jpg",
     quote:
       "The program was intensive but very rewarding. It pushed me to grow both personally and professionally, and I learned from supportive instructors and peers throughout the journey.",
   },
@@ -175,7 +175,7 @@ export const testimonialsData = [
     id: "sarah-gabriel",
     name: "Sarah Gabriel",
     track: "Data Analysis",
-    avatar: "assets/Images/testimonials/sarah.png",
+    avatar: "assets/testimonials/sarah.jpg",
     quote:
       "Enrolling in the Data Analysis track was a turning point in my learning journey. I learned how data truly drives decision-making, from cleaning data to interpreting insights for real-world projects.",
   },
@@ -183,7 +183,7 @@ export const testimonialsData = [
     id: "iwuoha-vera",
     name: "Iwuoha Vera",
     track: "Product Management",
-    avatar: "assets/Images/testimonials/vera.png",
+    avatar: "assets/testimonials/vera.jpg",
     quote:
       "Before the bootcamp, tech skills felt confusing. Code and Create changed my perspective entirely and equipped me with solid knowledge, especially in managing products.",
   },
@@ -191,7 +191,7 @@ export const testimonialsData = [
     id: "bello-risikat",
     name: "Bello Risikat",
     track: "Product Management",
-    avatar: "assets/Images/testimonials/risikat.png",
+    avatar: "assets/testimonials/risikat.jpg",
     quote:
       "Completing the Product Management bootcamp was a defining step in my career. I gained practical skills in user research, product strategy, roadmaps, and execution.",
   },
@@ -199,7 +199,7 @@ export const testimonialsData = [
     id: "igwe-favour",
     name: "Igwe Favour",
     track: "Product Design",
-    avatar: "assets/Images/testimonials/favour.png",
+    avatar: "assets/testimonials/favour.jpg",
     quote:
       "Code & Create bootcamp transformed how I approach tech and design. From hands-on projects to mentor feedback, every part of the journey challenged me to grow.",
   },
