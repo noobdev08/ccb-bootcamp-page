@@ -125,3 +125,82 @@ export const tracksData = [
     ctaLabel: "Apply For this track",
   },
 ];
+
+
+/*=========================
+ * Testimonials Data
+ ==========================*/
+export const testimonialsData = [
+  {
+    id: "jennifer-ekwuori",
+    name: "Jennifer Okwueri",
+    track: "Product Design",
+    avatar: "assets/Images/testimonials/jennifer.png",
+    quote:
+      "Joining Code and Create Bootcamp is one of the best decisions you’ll ever make. From day one, you're guided by mentors who not only teach but genuinely care about your growth. The hands-on projects, collaborative environment, and career support push you beyond your limits.",
+  },
+  {
+    id: "adun-nosakhare",
+    name: "Adun Nosakhare",
+    track: "Web Development",
+    avatar: "assets/Images/testimonials/adun.png",
+    quote:
+      "Code and Create Bootcamp gave me the chance to revisit and truly understand HTML, CSS, and JavaScript. Through guided practice and real projects, I built the confidence and skills needed to tackle more advanced development work.",
+  },
+  {
+    id: "hafsat-shuaibu",
+    name: "Hafsat Shuaibu",
+    track: "Data Analysis",
+    avatar: "assets/Images/testimonials/hafsat.png",
+    quote:
+      "The Code & Create Bootcamp provided me with a solid foundation in data analysis through hands-on learning and structured mentorship. The one-on-one mentorship, soft skill webinars, and Career Week stood out.",
+  },
+  {
+    id: "chinweike-david",
+    name: "Chinweike David",
+    track: "Web Development",
+    avatar: "assets/Images/testimonials/chinweike.png",
+    quote:
+      "The Code and Create Bootcamp was a highly impactful experience. Over three months, I gained solid hands-on skills in web development through a well-structured and practical learning process.",
+  },
+  {
+    id: "ibrahim-sofiyyah",
+    name: "Ibrahim Sofiyyah",
+    track: "Web Development",
+    avatar: "assets/Images/testimonials/ibrahim.png",
+    quote:
+      "The program was intensive but very rewarding. It pushed me to grow both personally and professionally, and I learned from supportive instructors and peers throughout the journey.",
+  },
+  {
+    id: "sarah-gabriel",
+    name: "Sarah Gabriel",
+    track: "Data Analysis",
+    avatar: "assets/Images/testimonials/sarah.png",
+    quote:
+      "Enrolling in the Data Analysis track was a turning point in my learning journey. I learned how data truly drives decision-making, from cleaning data to interpreting insights for real-world projects.",
+  },
+  {
+    id: "iwuoha-vera",
+    name: "Iwuoha Vera",
+    track: "Product Management",
+    avatar: "assets/Images/testimonials/vera.png",
+    quote:
+      "Before the bootcamp, tech skills felt confusing. Code and Create changed my perspective entirely and equipped me with solid knowledge, especially in managing products.",
+  },
+  {
+    id: "bello-risikat",
+    name: "Bello Risikat",
+    track: "Product Management",
+    avatar: "assets/Images/testimonials/risikat.png",
+    quote:
+      "Completing the Product Management bootcamp was a defining step in my career. I gained practical skills in user research, product strategy, roadmaps, and execution.",
+  },
+  {
+    id: "igwe-favour",
+    name: "Igwe Favour",
+    track: "Product Design",
+    avatar: "assets/Images/testimonials/favour.png",
+    quote:
+      "Code & Create bootcamp transformed how I approach tech and design. From hands-on projects to mentor feedback, every part of the journey challenged me to grow.",
+  },
+];
