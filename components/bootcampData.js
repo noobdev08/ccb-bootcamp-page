@@ -203,3 +203,30 @@ export const testimonialsData = [
       "Code & Create bootcamp transformed how I approach tech and design. From hands-on projects to mentor feedback and a supportive community, every part of the journey challenged me to grow. I gained real skills, confidence, and a strong foundation for my tech journey.",
   },
 ];
+
+/*=========================
+ * Project Data
+ ==========================*/
+export const projectData = [
+   {
+     id: "project-1",
+     image: "assets/testimonials/project1.png",
+     alt: "project image",
+     title: "On line learning platform \n  by \n",
+     team: "Team Teklen, cohort 1.0",
+   },
+   {
+     id: "project-2",
+     image: "assets/testimonials/project1.png",
+     alt: "project image",
+     title: "On line learning platform \n  by \n",
+     team: "Team Teklen, cohort 1.0",
+   },
+   {
+     id: "project-3",
+     image: "assets/testimonials/project1.png",
+     alt: "project image",
+     title: "On line learning platform \n  by \n",
+     team: "Team Teklen, cohort 1.0",
+   },
+ ];
