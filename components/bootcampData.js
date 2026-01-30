@@ -25,7 +25,7 @@ export const tracksData = [
     duration: "Duration: 3 Months",
     ctaLabel: "Apply For this track",
   },
-  
+
   {
     id: "product-design",
     title: "Product Design",
@@ -43,8 +43,8 @@ export const tracksData = [
       "UI Design Principles & Layout",
       "Typography, Color & Visual Design",
       "Wire framing, Prototyping & Usability Testing",
-      "Introduction to Design Systems"
-    ], 
+      "Introduction to Design Systems",
+    ],
     toolsHeading: "Tools and technologies",
     tools: [
       "Figma",
@@ -79,15 +79,15 @@ export const tracksData = [
     ],
     toolsHeading: "Tools and technologies",
     tools: [
-  "Microsoft Excel / Google Sheets",
-  "SQL",
-  "Python (Jupyter Notebook, Pandas, Matplotlib, Seaborn) ",
-  "Power BI or Tableau ",
-  "Google Data Studio",
-  ],
+      "Microsoft Excel / Google Sheets",
+      "SQL",
+      "Python (Jupyter Notebook, Pandas, Matplotlib, Seaborn) ",
+      "Power BI or Tableau ",
+      "Google Data Studio",
+    ],
     outcomeHeading: "Learning outcome",
     outcome:
-"By the end of this track, you will have completed real-world data projects, built a portfolio with dashboards and reports, and gained the skills needed to apply for entry-level data analyst roles.",
+      "By the end of this track, you will have completed real-world data projects, built a portfolio with dashboards and reports, and gained the skills needed to apply for entry-level data analyst roles.",
     duration: "Duration: 3 Months",
     ctaLabel: "Apply For this track",
   },
@@ -109,7 +109,7 @@ export const tracksData = [
       "Prioritization Techniques ",
       "Stakeholder Management & Communication",
       "Basics of Analytics & Product Metrics",
-      "Go-to-Market Strategy."
+      "Go-to-Market Strategy.",
     ],
     toolsHeading: "Tools and technologies",
     tools: [
@@ -126,13 +126,12 @@ export const tracksData = [
   },
 ];
 
-
 /*=========================
  * Testimonials Data
  ==========================*/
 export const testimonialsData = [
   {
-    id: "jennifer-ekwuori",
+    id: "jennifer-okwuori",
     name: "Jennifer Okwueri",
     track: "Product Design",
     avatar: "assets/testimonials/jennifer.jpg",
@@ -145,7 +144,7 @@ export const testimonialsData = [
     track: "Web Development",
     avatar: "assets/testimonials/adun.jpg",
     quote:
-      "Code and Create Bootcamp gave me the chance to revisit and truly understand HTML, CSS, and JavaScript. Through guided practice and real projects, I built the confidence and skills needed to tackle more advanced development work.",
+      "Code and Create Bootcamp gave me the chance to revisit and truly understand HTML, CSS, and JavaScript. By strengthening these fundamentals through guided practice and real projects, I was able to build the confidence and skills needed to tackle more advanced development work.",
   },
   {
     id: "hafsat-shuaibu",
@@ -153,7 +152,7 @@ export const testimonialsData = [
     track: "Data Analysis",
     avatar: "assets/testimonials/hafsat.jpg",
     quote:
-      "The Code & Create Bootcamp provided me with a solid foundation in data analysis through hands-on learning and structured mentorship. The one-on-one mentorship, soft skill webinars, and Career Week stood out.",
+      "The Code & Create Bootcamp provided me with a solid foundation in data analysis through hands-on learning and structured mentorship. The one-on-one mentorship, soft skill webinars, and Career Week stood out, helping me grow not only technically but also professionally. I gained strong skills in data cleaning.",
   },
   {
     id: "chinweike-david",
@@ -161,7 +160,7 @@ export const testimonialsData = [
     track: "Web Development",
     avatar: "assets/testimonials/chinweike.jpg",
     quote:
-      "The Code and Create Bootcamp was a highly impactful experience. Over three months, I gained solid hands-on skills in web development through a well-structured and practical learning process.",
+      "The Code and Create Bootcamp was a highly impactful experience for me. Over the course of three months, I gained solid, hands-on skills in web development through a well-structured and practical learning process. The training pushed me to think critically, improve in problem-solving",
   },
   {
     id: "ibrahim-sofiyyah",
@@ -169,7 +168,7 @@ export const testimonialsData = [
     track: "Web Development",
     avatar: "assets/testimonials/ibrahim.jpg",
     quote:
-      "The program was intensive but very rewarding. It pushed me to grow both personally and professionally, and I learned from supportive instructors and peers throughout the journey.",
+      "The program was intensive but very rewarding, and it pushed me to grow both personally and professionally. I also had the opportunity to connect with great people and learn from supportive instructors and peers. Overall, this bootcamp has played a big role in my growth, and I’m very grateful.",
   },
   {
     id: "sarah-gabriel",
@@ -177,7 +176,7 @@ export const testimonialsData = [
     track: "Data Analysis",
     avatar: "assets/testimonials/sarah.jpg",
     quote:
-      "Enrolling in the Data Analysis track was a turning point in my learning journey. I learned how data truly drives decision-making, from cleaning data to interpreting insights for real-world projects.",
+      "Enrolling in the Data Analysis track at the Code & Create Bootcamp was a turning point in my learning journey. The program didn’t just teach tools it helped me understand how data truly drives decision-making. From data cleaning and analysis to interpreting insights for real-world projects.",
   },
   {
     id: "iwuoha-vera",
@@ -185,7 +184,7 @@ export const testimonialsData = [
     track: "Product Management",
     avatar: "assets/testimonials/vera.jpg",
     quote:
-      "Before the bootcamp, tech skills felt confusing. Code and Create changed my perspective entirely and equipped me with solid knowledge, especially in managing products.",
+      "Prior to the bootcamp, I always viewed tech-related skills with so much confusion and ambiguity. My decision to join Code and Create bootcamp changed my perspective about tech. During the course of the bootcamp, my mind was equipped with a good knowledge on tech especially how to manage products.",
   },
   {
     id: "bello-risikat",
@@ -193,7 +192,7 @@ export const testimonialsData = [
     track: "Product Management",
     avatar: "assets/testimonials/risikat.jpg",
     quote:
-      "Completing the Product Management bootcamp was a defining step in my career. I gained practical skills in user research, product strategy, roadmaps, and execution.",
+      "Completing this product management bootcamp has been a defining step in my career journey. The program equipped me with practical skills in user research, product strategy, roadmap planning, and  Project execution. The hands-on projects and mentorship made the learning experience valuable.",
   },
   {
     id: "igwe-favour",
@@ -201,6 +200,6 @@ export const testimonialsData = [
     track: "Product Design",
     avatar: "assets/testimonials/favour.jpg",
     quote:
-      "Code & Create bootcamp transformed how I approach tech and design. From hands-on projects to mentor feedback, every part of the journey challenged me to grow.",
+      "Code & Create bootcamp transformed how I approach tech and design. From hands-on projects to mentor feedback and a supportive community, every part of the journey challenged me to grow. I gained real skills, confidence, and a strong foundation for my tech journey.",
   },
 ];
