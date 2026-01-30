@@ -208,25 +208,25 @@ export const testimonialsData = [
  * Project Data
  ==========================*/
 export const projectData = [
-   {
-     id: "project-1",
-     image: "assets/testimonials/project1.png",
-     alt: "project image",
-     title: "On line learning platform \n  by \n",
-     team: "Team Teklen, cohort 1.0",
-   },
-   {
-     id: "project-2",
-     image: "assets/testimonials/project1.png",
-     alt: "project image",
-     title: "On line learning platform \n  by \n",
-     team: "Team Teklen, cohort 1.0",
-   },
-   {
-     id: "project-3",
-     image: "assets/testimonials/project1.png",
-     alt: "project image",
-     title: "On line learning platform \n  by \n",
-     team: "Team Teklen, cohort 1.0",
-   },
- ];
+  {
+    id: "project-1",
+    image: "assets/testimonials/project1.png",
+    alt: "project image",
+    title: "On line learning platform <br>  by",
+    team: "Team Teklen, cohort 1.0",
+  },
+  {
+    id: "project-2",
+    image: "assets/testimonials/project1.png",
+    alt: "project image",
+    title: "On line learning platform <br>  by",
+    team: "Team Teklen, cohort 1.0",
+  },
+  {
+    id: "project-3",
+    image: "assets/testimonials/project1.png",
+    alt: "project image",
+    title: "On line learning platform <br>  by",
+    team: "Team Teklen, cohort 1.0",
+  },
+];

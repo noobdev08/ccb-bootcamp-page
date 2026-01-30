@@ -87,7 +87,7 @@ main {
 }
 
 .testimonial-card h3 {
-  font-size: 1.75rem; 
+  font-size: 1.75rem;
   font-weight: 700;
   color: var(--blue-black);
   margin-bottom: 0.5rem;
@@ -101,7 +101,7 @@ main {
 }
 
 .testimonial-card .quote {
-  font-size: .9rem;
+  font-size: 0.9rem;
   line-height: 1.4;
   color: var(--blue-black);
   position: relative;
@@ -126,9 +126,84 @@ main {
   font-weight: 600;
   color: var(--primary-yellow);
   position: absolute;
-  bottom: -.8rem;
-  right: -.5rem;
+  bottom: -0.8rem;
+  right: -0.5rem;
   line-height: 1;
+}
+
+/* =========================
+   Project Section
+========================= */
+.project-section {
+  background-color: var(--off-white);
+  padding: 0rem 1.5rem 5rem;
+  width: 100%;
+}
+
+.project-section-content {
+  max-width: 75rem;
+  margin: 0 auto;
+}
+
+.project-section h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--blue-black);
+  margin-bottom: 0.3rem;
+}
+
+.project-section .project-section-description {
+  color: var(--deep-navy);
+  font-size: 0.9rem;
+  margin-bottom: 1.5rem;
+}
+
+.project-cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-card {
+  background-color: var(--white);
+  border-radius: 1.25rem;
+  overflow: hidden;
+  box-shadow: 0 0.25rem 1.25rem rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  flex: 1 1 18.75rem;
+  max-width: 23.75rem;
+  padding-bottom: 1.875rem;
+}
+
+.project-card img {
+  width: 100%;
+  height: 13.75rem;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s ease;
+}
+.project-card:hover img {
+  transform: scale(1.05);
+}
+
+.project-card h3 {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--blue-black);
+  margin-top: 1.5rem;
+  line-height: 1.4;
+}
+
+.project-card .team {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--primary-yellow);
+  margin-top: 0.3rem;
 }
 
 /* =========================
@@ -138,8 +213,14 @@ main {
   .testimonial-section .testimonial-card-section {
     grid-template-columns: repeat(2, 1fr);
   }
+  .project-section-content {
+    padding: 0 1.8rem 5rem;
+  }
 }
 @media (min-width: 900px) {
+  .project-section-content {
+    padding: 0 3rem 5rem;
+  }
   .testimonial-section .testimonial-card-section {
     grid-template-columns: repeat(3, 1fr);
   }
