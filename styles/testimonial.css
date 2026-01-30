@@ -43,3 +43,104 @@ main {
 .hero-section .hero-section-content p {
   line-height: 1.2;
 }
+
+.testimonial-section {
+  background-color: var(--off-white);
+  padding: 4rem 1.5rem 5rem;
+}
+.testimonial-section .testimonial-card-section {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+/*=====================
+ Container for the card 
+ ======================*/
+.testimonial-card {
+  position: relative;
+  background-color: var(--white);
+  border: 2px solid var(--primary-yellow);
+  border-radius: 1.25rem;
+  padding: 5rem 1.875rem 2.5rem 1.875rem;
+  margin-top: 3.5rem;
+  max-width: 25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 0.25rem 0.9375rem rgba(0, 0, 0, 0.05);
+}
+
+.testimonial-card img {
+  width: 7rem;
+  height: 7rem;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid var(--primary-yellow);
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--white);
+  box-shadow: 0 0.25rem 0.625rem rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-card h3 {
+  font-size: 1.75rem; 
+  font-weight: 700;
+  color: var(--blue-black);
+  margin-bottom: 0.5rem;
+}
+
+.testimonial-card .track {
+  font-size: 1.125rem;
+  font-weight: 500;
+  color: var(--blue-black);
+  margin-bottom: 1rem;
+}
+
+.testimonial-card .quote {
+  font-size: .9rem;
+  line-height: 1.4;
+  color: var(--blue-black);
+  position: relative;
+  display: inline-block;
+}
+
+/* Styling the Quotation Marks */
+.testimonial-card .quote::before {
+  content: "“";
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--primary-yellow);
+  position: absolute;
+  top: 0rem;
+  left: -1.25rem;
+  line-height: 1;
+}
+
+.testimonial-card .quote::after {
+  content: "”";
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--primary-yellow);
+  position: absolute;
+  bottom: -.8rem;
+  right: -.5rem;
+  line-height: 1;
+}
+
+/* =========================
+   Responsive Design
+========================= */
+@media (min-width: 600px) {
+  .testimonial-section .testimonial-card-section {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 900px) {
+  .testimonial-section .testimonial-card-section {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
