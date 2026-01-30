@@ -5,7 +5,7 @@
 .site-footer {
     background-color: var(--blue-black);
     color: var(--white);
-    padding: 60px 8%;
+    padding: 60px 8% 2% 8%;
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -73,7 +73,7 @@
     display: flex;
     justify-content: space-between;
     gap: 40px;
-    padding-bottom: 40px;
+    padding-bottom: 30px;
     border-bottom: 1px solid white;
 }
 
@@ -87,6 +87,15 @@
     margin-bottom: 20px;
     text-decoration: none;
     color: inherit;
+}
+
+.footer-support a{
+    text-decoration:none;
+    color:white;
+}
+
+.footer-support a:hover {
+    color: var(--primary-yellow);
 }
 
 .footer-logo-img {
@@ -140,7 +149,8 @@
 
 .footer-social-icons {
     display: flex;
-    gap: 1rem;
+    gap: 3rem;
+    margin:6% 0 0 15%;
 }
 
 .social-icon {
@@ -151,22 +161,12 @@
 
 .footer-bottom {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     padding-top: 30px;
     font-size: 16px;
 }
 
-.footer-legal-links a {
-    color: var(--white);
-    text-decoration: none;
-    margin-left: 30px;
-    transition: color 0.2s;
-}
-
-.footer-legal-links a:hover {
-    color: var(--primary-yellow);
-}
 
 @media (max-width: 900px) {
     .footer-content {
@@ -188,4 +188,182 @@
         margin-left: 0;
         margin-right: 20px;
     }
+
+    /* Update section responsive */
+    .update {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+        margin: 5% 0;
+        align-items: stretch;
+    }
+
+    .update-content h1 {
+        font-size: 22px;
+        margin-bottom: 5%;
+    }
+
+    .update-content p {
+        font-size: 14px;
+    }
+
+    .update-email {
+        flex-direction: column;
+        width: 100%;
+        gap: 10px;
+    }
+
+    #email {
+        width: 100%;
+        padding: 12px 10px;
+        font-size: 14px;
+    }
+
+    .update-email button {
+        width: 100%;
+        padding: 12px 20px;
+        font-size: 16px;
+    }
+
+    .site-footer {
+        padding: 40px 20px 20px 20px;
+    }
+
+    .footer-social-icons {
+        gap: 2rem;
+        margin: 5% 0 0 0;
+        justify-content: flex-start;
+    }
+
+    .social-icon {
+        width: 40px;
+        height: 40px;
+    }
+
+    .footer-heading {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+
+    .footer-links-group li {
+        margin-bottom: 8px;
+    }
+
+    .footer-links-group a {
+        font-size: 0.85rem;
+    }
+}
+
+/* Mobile Responsive - max-width 768px */
+@media (max-width: 768px) {
+    .site-footer {
+        padding: 30px 15px 15px 15px;
+    }
+
+    .update {
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px;
+        margin: 8% 0;
+        align-items: stretch;
+        border-radius: 8px;
+    }
+
+    .update-content h1 {
+        font-size: 18px;
+        margin-bottom: 5%;
+    }
+
+    .update-content p {
+        font-size: 13px;
+        line-height: 1.4;
+    }
+
+    .update-email {
+        flex-direction: column;
+        width: 100%;
+        gap: 8px;
+    }
+
+    #email {
+        width: 100%;
+        padding: 10px 10px;
+        font-size: 13px;
+    }
+
+    .update-email button {
+        width: 100%;
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        gap: 20px;
+        padding-bottom: 20px;
+    }
+
+    .footer-brand {
+        max-width: 100%;
+    }
+
+
+    .footer-logo-text {
+        font-size: 1.1rem;
+    }
+
+    .footer-mission {
+        font-size: 0.85rem;
+        line-height: 1.5;
+    }
+
+    .footer-links-group {
+        margin-bottom: 20px;
+    }
+
+    .footer-heading {
+        font-size: 16px;
+        margin-bottom: 12px;
+        font-weight: 700;
+    }
+
+    .footer-links-group ul {
+        padding: 0;
+    }
+
+    .footer-links-group li {
+        margin-bottom: 6px;
+    }
+
+    .footer-links-group a {
+        font-size: 0.8rem;
+        line-height: 1.6;
+    }
+
+    .follow {
+        margin-bottom: 8px;
+    }
+
+    .footer-social-icons {
+        display: flex;
+        gap: 1rem;
+        margin: 5% 0 0 0;
+        justify-content: flex-start;
+    }
+
+    .social-icon {
+        width: 35px;
+        height: 35px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        padding: 20px 0 10px 0;
+        font-size: 12px;
+        text-align: center;
+    }
+
 }

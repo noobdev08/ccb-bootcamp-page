@@ -29,6 +29,14 @@ export function createFooter(containerId = "footer-container") {
                     <p class="footer-mission">
                         Empowering the next generation of tech leaders through practical learning and innovation. We equip young people with relevant digital skills, real-world experience, and the confidence to thrive in an evolving tech landscape.
                     </p>
+                     <div class="footer-social-icons">
+                        <a href="#">
+                            <img src="./assets/images/x-logo.png" alt="x-icon" class="social-icon social-x"/>
+                        </a>
+                        <a href="#">
+                            <img src="./assets/images/linkedln-logo.png" alt="x-icon"  class="social-icon social-linkedin"/>
+                        </a>
+                    </div>
                 </div>
 
                 <div class="footer-links-group">
@@ -43,16 +51,15 @@ export function createFooter(containerId = "footer-container") {
                     </ul>
                 </div>
 
-                <div class="footer-social">
-                    <h3 class="footer-heading follow">Follow Us On:</h3>
-                    <div class="footer-social-icons">
-                        <a href="#">
-                            <img src="./assets/images/x-logo.png" alt="x-icon" class="social-icon social-x"/>
-                        </a>
-                        <a href="#">
-                            <img src="./assets/images/linkedln-logo.png" alt="x-icon"  class="social-icon social-linkedin"/>
-                        </a>
-                    </div>
+                <div class="footer-support">
+                    <h3 class="footer-heading">Contact & Support</h3>
+                   <a href="mailto:hello@codeandcreate.com">Email: <u>hello@codeandcreate.com</u></a> <br><br>
+                    <p><a href="tel:+234 800 123 4567">Phone: <u> +234 800 123 4567</u></a></p>
+                </div>
+
+                <div class="footer-partners">
+                     <h3 class="footer-heading">Our Partners</h3>
+                     <p>Edustipend</p>
                 </div>
             </div>
 
@@ -60,10 +67,7 @@ export function createFooter(containerId = "footer-container") {
                 <p class="footer-copyright">
                     &copy; 2025. Code &amp; Create. All Rights Reserved.
                 </p>
-                <div class="footer-legal-links">
-                    <a href="#">Privacy Policy</a>
-                    <a href="#">Terms Of Service</a>
-                </div>
+                
             </div>
         </footer>
     `;
