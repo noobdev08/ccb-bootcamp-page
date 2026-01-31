@@ -55,9 +55,12 @@ createValueCards('.values-grid', coreValuesData);
 function createTeamCard(containerSelector, personName, personRole, customClass = ''){
     const container = document.querySelector(containerSelector);
     
+    const bgImage = `./assets/Images/${personName}.png`;
+
     const classAttr = customClass ? ` class="${customClass}"` : '';
+    
     const htmlContent = `
-        <div class="teamCard"${classAttr}>
+        <div class="teamCard"${classAttr} style="background-image: url('${bgImage}');">
             <div class="banner">
                 <div class="name">
                     <h3>${personName}</h3>
@@ -67,7 +70,7 @@ function createTeamCard(containerSelector, personName, personRole, customClass =
                 </div> 
             </div>
         </div>
-    `
+    `;
 
     container.insertAdjacentHTML('beforeend', htmlContent);
 }
