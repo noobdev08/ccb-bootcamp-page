@@ -16,8 +16,8 @@ export function createFooter(containerId = "footer-container") {
             </div>
 
             <div class="update-email"> 
-            <form action="">
-                <input type="email" name="email" id="email" placeholder="Enter your email address">
+            <form action="mailto:hello@codeandcreate.com" method="post" enctype="text/plain">
+                <input type="email" name="email" id="email" placeholder="Enter your email address" required>
                 <button type="submit">Subscribe</button>
             </form>
             </<div>
@@ -42,12 +42,13 @@ export function createFooter(containerId = "footer-container") {
                 <div class="footer-links-group">
                     <h3 class="footer-heading">Quick Links</h3>
                     <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Tracks</a></li>
-                        <li><a href="#">Admissions</a></li>
+                        <li><a href="/index.html">Home</a></li>
+                        <li><a href="/About.html">About</a></li>
+                        <li><a href="/tracks.html">Tracks</a></li>
+                        <li><a href="https://forms.gle/zP4DL7qA1WfreTGm8" target="_blank">Admissions</a></li>
                         <li><a href="#">Announcements</a></li>
-                        <li><a href="#">Testimonials</a></li>
+                        <li><a href="/testimonial.html">Testimonials</a></li>
+                       
                     </ul>
                 </div>
 
@@ -65,7 +66,7 @@ export function createFooter(containerId = "footer-container") {
 
             <div class="footer-bottom">
                 <p class="footer-copyright">
-                    &copy; 2025. Code &amp; Create. All Rights Reserved.
+                    &copy; 2026. Code &amp; Create. All Rights Reserved.
                 </p>
                 
             </div>

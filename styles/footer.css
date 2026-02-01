@@ -282,19 +282,20 @@
     .update-email {
         flex-direction: column;
         width: 100%;
-        gap: 8px;
+        gap: 3%;
     }
 
     #email {
         width: 100%;
         padding: 10px 10px;
         font-size: 13px;
+        margin-bottom: 3%;
     }
 
     .update-email button {
         width: 100%;
-        padding: 10px 15px;
-        font-size: 14px;
+        padding: 15px 15px;
+        font-size: 16px;
     }
 
     .footer-content {

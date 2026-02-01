@@ -69,28 +69,33 @@ body {
     margin:8% 0 2% 0;
     gap:15%;
  }
-
+ 
  i{
     font-size:20px;
+    padding-top:4%;
  }
  #btn-apply{
-    padding:15px 25px;
+   text-decoration: none;
+    padding:15px 35px;
     border-radius: 8px;
     background-color: var(--primary-yellow);
+    color: #010E13;
     border:none;
     font-weight: bold;
-    font-size: 24px;
+    font-size: 20px;
     cursor:pointer;
     transition:0.6s;
  }
 
  #btn-explore{
+    text-decoration: none;
     padding:15px 25px;
     border-radius: 8px;
     background-color: var(--light-yellow);
+    color:#023352;
     border:2px solid var(--primary-blue) ;
     font-weight: bold;
-    font-size: 24px;
+    font-size: 20px;
     cursor:pointer;
     transition:0.6s;
  }
@@ -151,7 +156,7 @@ padding:20px 0;
 .reveal {
    opacity: 0;
    transform: translateY(20px) scale(0.995);
-   transition: opacity 600ms ease-out, transform 600ms ease-out;
+   transition: opacity 1000ms ease-out, transform 200ms ease-out;
    will-change: opacity, transform;
 }
 
@@ -479,17 +484,22 @@ padding:20px 0;
 }
 .cta-content p{
    font-size: 30px;
+   margin-bottom:4%;
 }
+
 .cta-content h6{
    font-size:18px;
    font-style: italic;
-
+   margin-top: 3%;
 }
+
+
 
 #cta-btn{
    border: none;
    padding:2% 4%;
-   margin: 2% 0;
+   font-weight: bold;
+   text-decoration: none;
    font-size: 20px;
    color: var(--primary-yellow);
    background-color: #023352;
@@ -508,6 +518,10 @@ padding:20px 0;
       flex-direction: column;
       gap: 2%;
       align-items: center;
+   }
+
+   #intro-img{ 
+      display:none;
    }
 
    #intro-text {
@@ -531,7 +545,7 @@ padding:20px 0;
       line-height: 130%;
    }
 
-   .btn-intro {
+   .btn-intro a{
       display: flex;
       flex-direction: column;
       margin: 10% 0 5% 0;
@@ -547,7 +561,7 @@ padding:20px 0;
    #btn-explore {
       width: 100%;
       font-size: 16px;
-      padding: 12px 20px;
+      padding: 12px 25px;
    }
 
    i {
@@ -771,14 +785,16 @@ padding:20px 0;
    }
 
    #userName {
-      font-size: 18px;
-      margin-bottom: 3%;
+      display: flex;
+      justify-content: center;
+      font-size: 23px;
+      margin-bottom: 4%;
    }
 
    .profile {
       display: flex;
-      flex-direction: column;
-      gap: 5px;
+      flex-direction: row;
+      gap: 55px;
       margin-top: 3%;
    }
 
@@ -870,6 +886,6 @@ padding:20px 0;
    #cta-btn {
       padding: 12px 30px;
       font-size: 16px;
-      margin: 5% 0;
+      margin: 6% 0;
    }
 }
