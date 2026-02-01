@@ -494,3 +494,121 @@ padding:20px 0;
    background-color: black;
    color: white;
 }
+
+/* --- Mobile Responsive Styles (Max-width: 768px) --- */
+@media screen and (max-width: 768px) {
+    
+    /* 1. Reset Global Layout */
+    .home-intro {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+    #intro-text, #intro-img {
+        position: static; /* Removes the top/left shifts */
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    #intro-text h1 {
+        font-size: 40px;
+    }
+
+    #intro-text span {
+        font-size: 34px;
+    }
+
+    #intro-text p {
+        font-size: 18px;
+    }
+
+    .btn-intro {
+        justify-content: center;
+        flex-direction: column;
+        gap: 15px;
+        margin-top: 20px;
+    }
+
+    /* 2. Sections and Spacing */
+    .section-offers, .home-tracks h1, .grid-layout, .track-list {
+        margin: 5% 20px; /* Reduced side margins for mobile */
+    }
+
+    .section-offers h2 {
+        font-size: 28px;
+    }
+
+    /* 3. Accomplishment Bar */
+    #accomplishment {
+        top: 0;
+        margin: 20px 5%;
+    }
+
+    .list {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        margin: 20px 0;
+        width: 100%;
+        justify-content: center;
+    }
+
+    /* 4. Testimonials */
+    .testimonial-card {
+        flex-direction: column;
+        margin: 5% 20px;
+        padding: 20px;
+        text-align: center;
+    }
+
+    #userImage {
+        width: 100%;
+        height: auto;
+        max-width: 250px;
+        margin: 0 auto;
+    }
+
+    .profile {
+        justify-content: center;
+    }
+
+    /* 5. FAQ Container */
+    .faq-container {
+        grid-template-columns: 1fr; /* Stack FAQs vertically */
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    /* 6. CTA Section */
+    .cta-content h1 {
+        font-size: 28px;
+    }
+
+    .cta-content p {
+        font-size: 20px;
+    }
+
+    #cta-btn {
+        width: 100%; /* Full width button on mobile */
+        padding: 15px;
+    }
+
+    /* 7. Grid Overrides */
+    .grid-layout, .track-list, .benefit-list {
+        grid-template-columns: 1fr; /* Single column */
+        gap: 20px;
+    }
+
+    #btn-apply{
+      display: block;
+    }
+
+    #btn-explore {
+      display: block;
+    }
+
+    #girl {
+      display: none;
+    }
+}
