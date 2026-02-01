@@ -15,7 +15,7 @@ export function createHeader(containerId = "header") {
           <li><a href="#">Home</a></li>
           <li><a href="/About.html">About</a></li>
           <li><a href="/tracks.html">Tracks</a></li>
-          <li><a href="#">News</a></li>
+          <li><a href="/testimonial.html">Testimonials</a></li>
         </ul>
       </nav>
 

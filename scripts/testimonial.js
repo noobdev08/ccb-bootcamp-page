@@ -1,6 +1,8 @@
+import { createHeader } from "../components/header.js";
 import { testimonialsData, projectData } from "../components/bootcampData.js";
 import { createShowcaseFooter } from "../components/footerShowcase.js";
 
+createHeader("header");
 createShowcaseFooter("footer-showcase-container");
 
 const container = document.getElementById("testimonials");
