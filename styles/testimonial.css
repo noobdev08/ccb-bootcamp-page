@@ -187,6 +187,9 @@ main {
   display: block;
   transition: transform 0.3s ease;
 }
+.project-card:hover{
+  box-shadow: 0 0.25rem 1.25rem rgba(0, 0, 0, 0.15);
+}
 .project-card:hover img {
   transform: scale(1.05);
 }
