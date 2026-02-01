@@ -19,7 +19,7 @@ export function createHeader(containerId = "header") {
         </ul>
       </nav>
 
-      <button class="header-btn">Apply Now</button>
+      <a class="header-btn" href="https://forms.gle/zP4DL7qA1WfreTGm8" style="color: black">Apply Now</a>
     </header>
   `;
 }
