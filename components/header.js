@@ -12,14 +12,14 @@ export function createHeader(containerId = "header") {
 
       <nav>
         <ul class="header-list">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Tracks</a></li>
-          <li><a href="#">News</a></li>
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/About.html">About</a></li>
+          <li><a href="/tracks.html">Tracks</a></li>
+          <li><a href="/testimonial.html">Testimonials</a></li>
         </ul>
       </nav>
 
-      <button class="header-btn">Apply Now</button>
+      <a class="header-btn" href="https://forms.gle/zP4DL7qA1WfreTGm8" style="color: black">Apply Now</a>
     </header>
   `;
 }
