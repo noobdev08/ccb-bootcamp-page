@@ -22,10 +22,6 @@
     box-sizing: border-box;
 }
 
-a {
-   text-decoration: none;
-}
-
 body {
     display: flex;
     flex-direction: column;
@@ -73,32 +69,35 @@ body {
     margin:8% 0 2% 0;
     gap:15%;
  }
-
+ 
  i{
     font-size:20px;
+    padding-top:4%;
  }
  #btn-apply{
-    padding:15px 25px;
+   text-decoration: none;
+    padding:15px 35px;
     border-radius: 8px;
     background-color: var(--primary-yellow);
+    color: #010E13;
     border:none;
     font-weight: bold;
-    font-size: 24px;
+    font-size: 20px;
     cursor:pointer;
     transition:0.6s;
-    color: black;
  }
 
  #btn-explore{
+    text-decoration: none;
     padding:15px 25px;
     border-radius: 8px;
     background-color: var(--light-yellow);
+    color:#023352;
     border:2px solid var(--primary-blue) ;
     font-weight: bold;
-    font-size: 24px;
+    font-size: 20px;
     cursor:pointer;
     transition:0.6s;
-    color: black;
  }
 
  #btn-apply:hover{
@@ -152,6 +151,19 @@ padding:20px 0;
   max-width: auto;
   margin:4% 100px;
  }
+
+/* Reveal-on-scroll animation styles */
+.reveal {
+   opacity: 0;
+   transform: translateY(20px) scale(0.995);
+   transition: opacity 1000ms ease-out, transform 200ms ease-out;
+   will-change: opacity, transform;
+}
+
+.reveal-visible {
+   opacity: 1;
+   transform: translateY(0) scale(1);
+}
 
  #card{
     background: #fff;
@@ -262,6 +274,7 @@ padding:20px 0;
  .link a{
     text-decoration:none;
     color:var(--primary-yellow);
+    margin-left: 15px;
  }
 
  .why-choose-us{
@@ -471,23 +484,27 @@ padding:20px 0;
 }
 .cta-content p{
    font-size: 30px;
+   margin-bottom:4%;
 }
+
 .cta-content h6{
    font-size:18px;
    font-style: italic;
-
+   margin-top: 3%;
 }
+
+
 
 #cta-btn{
    border: none;
    padding:2% 4%;
-   margin: 2% 0;
+   font-weight: bold;
+   text-decoration: none;
    font-size: 20px;
    color: var(--primary-yellow);
    background-color: #023352;
    border-radius:22px;
    cursor: pointer;
-   display: block;
 }
 
 #cta-btn:hover{
@@ -495,120 +512,379 @@ padding:20px 0;
    color: white;
 }
 
-/* --- Mobile Responsive Styles (Max-width: 768px) --- */
-@media screen and (max-width: 768px) {
-    
-    /* 1. Reset Global Layout */
-    .home-intro {
-        flex-direction: column;
-        text-align: center;
-        gap: 20px;
-    }
+/* Mobile Responsive - home-intro section only */
+@media (max-width: 768px) {
+   .home-intro {
+      flex-direction: column;
+      gap: 2%;
+      align-items: center;
+   }
 
-    #intro-text, #intro-img {
-        position: static; /* Removes the top/left shifts */
-        margin: 0 auto;
-        padding: 20px;
-    }
+   #intro-img{ 
+      display:none;
+   }
 
-    #intro-text h1 {
-        font-size: 40px;
-    }
+   #intro-text {
+      position: relative;
+      top: 20px;
+      left: 0;
+      text-align: center;
+      padding: 0 20px;
+   }
 
-    #intro-text span {
-        font-size: 34px;
-    }
+   #intro-text span {
+      font-size: 32px;
+   }
 
-    #intro-text p {
-        font-size: 18px;
-    }
+   #intro-text h1 {
+      font-size: 36px;
+   }
 
-    .btn-intro {
-        justify-content: center;
-        flex-direction: column;
-        gap: 15px;
-        margin-top: 20px;
-    }
+   #intro-text p {
+      font-size: 16px;
+      line-height: 130%;
+   }
 
-    /* 2. Sections and Spacing */
-    .section-offers, .home-tracks h1, .grid-layout, .track-list {
-        margin: 5% 20px; /* Reduced side margins for mobile */
-    }
+   .btn-intro a{
+      display: flex;
+      flex-direction: column;
+      margin: 10% 0 5% 0;
+      gap: 15px;
+      width: 100%;
+   }
 
-    .section-offers h2 {
-        font-size: 28px;
-    }
+   .btn-intro div {
+      width: 100%;
+   }
 
-    /* 3. Accomplishment Bar */
-    #accomplishment {
-        top: 0;
-        margin: 20px 5%;
-    }
+   #btn-apply,
+   #btn-explore {
+      width: 100%;
+      font-size: 16px;
+      padding: 12px 25px;
+   }
 
-    .list {
-        flex-direction: column;
-        align-items: center;
-        gap: 20px;
-        margin: 20px 0;
-        width: 100%;
-        justify-content: center;
-    }
+   i {
+      font-size: 14px;
+   }
 
-    /* 4. Testimonials */
-    .testimonial-card {
-        flex-direction: column;
-        margin: 5% 20px;
-        padding: 20px;
-        text-align: center;
-    }
+   #intro-img {
+      position: relative;
+      top: 0;
+      margin: 0;
+      width: 100%;
+      max-width: 300px;
+   }
 
-    #userImage {
-        width: 100%;
-        height: auto;
-        max-width: 250px;
-        margin: 0 auto;
-    }
+   #intro-img img {
+      width: 100% !important;
+      height: auto !important;
+      max-width: 300px;
+   }
 
-    .profile {
-        justify-content: center;
-    }
+   /* Accomplishment section responsive */
+   #accomplishment {
+      position: relative;
+      top: 0;
+      margin: 5% 2%;
+      border-radius: 20px;
+      padding: 20px;
+   }
 
-    /* 5. FAQ Container */
-    .faq-container {
-        grid-template-columns: 1fr; /* Stack FAQs vertically */
-        margin-left: 20px;
-        margin-right: 20px;
-    }
+   .list {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      margin: 5% 0;
+   }
 
-    /* 6. CTA Section */
-    .cta-content h1 {
-        font-size: 28px;
-    }
+   .demacation {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 15px;
+   }
 
-    .cta-content p {
-        font-size: 20px;
-    }
+   .demacation img {
+      width: 50px;
+      height: 50px;
+   }
 
-    #cta-btn {
-        width: 100%; /* Full width button on mobile */
-        padding: 15px;
-    }
+   .demacation h1 {
+      font-size: 28px !important;
+      margin: 0;
+   }
 
-    /* 7. Grid Overrides */
-    .grid-layout, .track-list, .benefit-list {
-        grid-template-columns: 1fr; /* Single column */
-        gap: 20px;
-    }
+   .demacation p {
+      font-size: 14px;
+      margin: 0;
+   }
 
-    #btn-apply{
+   /* Section offers responsive */
+   .section-offers {
+      margin: 5% 20px 0 20px;
+      text-align: center;
+   }
+
+   .section-offers h2 {
+      font-size: 28px;
+      padding: 15px 0;
+   }
+
+   .section-offers p {
+      font-size: 16px;
+      line-height: 1.5;
+   }
+
+   /* Grid layout responsive */
+   .grid-layout {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 20px;
+      margin: 5% 20px;
+   }
+
+   #card {
+      padding: 20px;
+   }
+
+   #card h3 {
+      font-size: 20px;
+      padding: 3% 0 5% 0;
+   }
+
+   #card p {
+      font-size: 16px;
+      padding: 2% 0 10% 0;
+   }
+
+   /* Home tracks responsive */
+   .home-tracks h1 {
+      font-size: 28px;
+      margin: 5% 20px;
+   }
+
+   .track-list {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 20px;
+      margin: 5% 20px;
+   }
+
+   .track-card {
+      border-radius: 15px;
+      padding: 0;
+      overflow: hidden;
+   }
+
+   .track-card img {
+      width: 100%;
+      height: auto;
       display: block;
-    }
+   }
 
-    #btn-explore {
+   .mini,
+   .mini-2,
+   .mini-3 {
+      margin: 4% 0;
+      width: 60%;
+      padding: 2% 5%;
+      font-size: 12px;
+   }
+
+   .track-card h4 {
+      font-size: 18px;
+      margin: 5% 0;
+      padding: 0 20px;
+   }
+
+   .track-card p {
+      font-size: 14px;
+      margin: 3% 0;
+      padding: 0 20px;
+   }
+
+   hr {
+      margin: 8% 0;
+   }
+
+   .link {
+      display: flex;
+      margin: 4% 0;
+      font-size: 14px;
+   }
+
+   /* Why choose us responsive */
+   .why-choose-us {
+      margin: 3% 0 0 0;
+   }
+
+   #heading h1 {
+      font-size: 28px;
+      margin: 5% 20px;
+   }
+
+   #heading p {
+      font-size: 18px;
+      margin-bottom: 5%;
+      padding: 0 20px;
+   }
+
+   .benefit-list {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 20px;
+      margin: 5% 20px 15% 20px;
+   }
+
+   #benefits {
+      text-align: center;
+      padding: 20px;
+   }
+
+   #benefits h3 {
+      margin: 3%;
+      font-size: 18px;
+   }
+
+   #benefits p {
+      font-size: 14px;
+   }
+
+   /* Testimony responsive */
+   .testimony h1 {
+      font-size: 28px;
+      margin: 5% 0;
+   }
+
+   .testimony p {
+      font-size: 18px;
+      padding: 0 20px;
+   }
+
+   .testimonial-card {
+      display: flex;
+      flex-direction: column;
+      margin: 5% 20px;
+      padding: 20px;
+      gap: 20px;
+   }
+
+   #userImage {
+      width: 100%;
+      max-width: 250px;
+      height: auto;
+      margin: 0 auto;
       display: block;
-    }
+   }
 
-    #girl {
-      display: none;
-    }
-}
+   #userText {
+      margin: 0;
+      font-size: 16px;
+      line-height: 1.6;
+   }
+
+   #userName {
+      display: flex;
+      justify-content: center;
+      font-size: 23px;
+      margin-bottom: 4%;
+   }
+
+   .profile {
+      display: flex;
+      flex-direction: row;
+      gap: 55px;
+      margin-top: 3%;
+   }
+
+   .profile h4 {
+      font-size: 14px;
+      margin: 0;
+   }
+
+   .profile span {
+      font-size: 14px;
+      margin: 0;
+   }
+
+   #prev,
+   #next {
+      padding: 6px 10px;
+      font-size: 14px;
+   }
+
+   #prev {
+      right: auto;
+      left: 10px;
+   }
+
+   #next {
+      left: auto;
+      right: 10px;
+   }
+
+   /* FAQs responsive */
+   #faqs {
+      font-size: 28px;
+      margin: 5% 20px;
+   }
+
+   .faq-container {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1rem;
+      margin-left: 20px;
+      margin-right: 20px;
+      margin-bottom: 5%;
+      max-width: 100%;
+   }
+
+   .faq-item {
+      padding: 15px 20px;
+      margin: 0;
+   }
+
+   .faq-question {
+      font-size: 14px;
+      margin: 0;
+      padding: 0 0 0 25px;
+   }
+
+   .faq-question::after {
+      font-size: 20px;
+      top: 0%;
+   }
+
+   .faq-answer {
+      font-size: 13px;
+      margin-top: 10px;
+      line-height: 1.5;
+   }
+
+   /* CTA responsive */
+   .cta {
+      padding: 5% 20px;
+   }
+
+   .cta-content h1 {
+      font-size: 28px;
+      line-height: 1.4;
+      margin-bottom: 3%;
+   }
+
+   .cta-content p {
+      font-size: 18px;
+      margin-bottom: 3%;
+   }
+
+   .cta-content h6 {
+      font-size: 14px;
+      margin-bottom: 5%;
+   }
+
+   #cta-btn {
+      padding: 12px 30px;
+      font-size: 16px;
+      margin: 6% 0;
+   }

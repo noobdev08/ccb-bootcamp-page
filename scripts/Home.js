@@ -4,6 +4,62 @@ import { createFooter } from "../components/footer.js";
 createHeader("header");
 createFooter("footer-container");
 
+// Roll Number Animation Function
+function rollNumber(elementId, finalNumber, duration = 2000, showPlus = false) {
+  const element = document.getElementById(elementId);
+  const startTime = performance.now();
+  const start = 0;
+  const suffix = showPlus ? ' +' : '';
+
+  function update(currentTime) {
+    const progress = Math.min((currentTime - startTime) / duration, 1);
+    const current = Math.floor(progress * finalNumber);
+    element.textContent = current.toLocaleString() + suffix;
+
+    if (progress < 1) {
+      requestAnimationFrame(update);
+    } else {
+      element.textContent = finalNumber.toLocaleString() + suffix;
+    }
+  }
+
+  requestAnimationFrame(update);
+}
+
+// Intersection Observer to trigger animation when section is visible
+const accomplishmentSection = document.getElementById("accomplishment");
+if (accomplishmentSection) {
+  const observer = new IntersectionObserver((entries) => {
+    if (entries[0].isIntersecting) {
+      // Start animations with staggered timing
+      rollNumber("counter-tracks", 5, 4000);
+      setTimeout(() => rollNumber("counter-capstone", 19, 4000), 100);
+      setTimeout(() => rollNumber("counter-admitted", 400, 4000, true), 200);
+      setTimeout(() => rollNumber("counter-graduated", 140, 4000, true), 300);
+      
+      // Stop observing after animation starts
+      observer.unobserve(accomplishmentSection);
+    }
+  }, { threshold: 0.5 });
+  
+  observer.observe(accomplishmentSection);
+}
+
+// Reveal-on-scroll for elements with `.reveal`
+const revealElements = document.querySelectorAll('.reveal');
+if (revealElements.length) {
+  const revealObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('reveal-visible');
+        revealObserver.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.15 });
+
+  revealElements.forEach(el => revealObserver.observe(el));
+}
+
 
 const testimonials =[
 {
@@ -12,7 +68,7 @@ const testimonials =[
     cohort: "Cohort 1",
     status: "Completed",
     track: "Web Development",
-    image: "assets/Images/David.png",
+    image: "assets/Images/David.jpg",
 },
 {
     name: "Igwe Favour",
@@ -51,6 +107,8 @@ const testimonials =[
 let currentIndex = 0;
 
 const card = document.querySelector(".testimonial-card");
+let touchStartX = 0;
+let touchEndX = 0;
 
 function loadTestimonial(index) {
     card.style.opacity = 0;
@@ -81,6 +139,31 @@ function nextTestimonial() {
 function prevTestimonial() {
     currentIndex = (currentIndex - 1 + testimonials.length) % testimonials.length;
     loadTestimonial(currentIndex);
+}
+
+// Touch event listeners for swipe functionality
+card.addEventListener("touchstart", (e) => {
+    touchStartX = e.changedTouches[0].screenX;
+}, false);
+
+card.addEventListener("touchend", (e) => {
+    touchEndX = e.changedTouches[0].screenX;
+    handleSwipe();
+}, false);
+
+function handleSwipe() {
+    const swipeThreshold = 50;
+    const diff = touchStartX - touchEndX;
+
+    // Swiped left - show next testimonial
+    if (diff > swipeThreshold) {
+        nextTestimonial();
+    }
+    
+    // Swiped right - show previous testimonial
+    if (diff < -swipeThreshold) {
+        prevTestimonial();
+    }
 }
 
 document.getElementById("next").addEventListener("click", nextTestimonial);
