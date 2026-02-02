@@ -1,19 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
 :root {
-    --primary-yellow: #EA9F1E;
-    --primary-blue: #023352;
-    --deep-navy: ;
-    --soft-blue: #5DA7D1;
-    --white: #ffffff; 
-    --soft-white: ;
-    --dark-grey: ; 
-    --mid-grey: ;  
-    --blue-black: #010E13;
-    --light-yellow: #FFFAF1;
-    --light-blue: #CFE2EC; 
+  --primary-yellow: #ea9f1e;
+  --primary-blue: #023352;
+  --deep-navy: #011e2a;
+  --soft-blue: #5da7d1;
+  --white: #ffffff;
+  --off-white: #f7f9fa;
+  --soft-white: ;
+  --dark-grey: ;
+  --mid-grey: ;
+  --blue-black: #010e13;
+  --light-yellow: #fffaf1;
+  --light-blue: #cfe2ec;
 }
 
-*, *::before, *::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", "Segoe UI", sans-serif;
 }

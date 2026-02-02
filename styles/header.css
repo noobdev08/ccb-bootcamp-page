@@ -27,7 +27,10 @@
 .header-list a:hover {
     color: var(--primary-yellow);
     border-bottom: 1px solid var(--primary-yellow);
+<<<<<<< HEAD
 
+=======
+>>>>>>> f2cdde5b27f25558820aa2819c49c9711dc2fc8e
 }
 
 .header-logo {
