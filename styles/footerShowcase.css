@@ -116,7 +116,7 @@
   color: var(--primary-yellow);
 }
 
-.footer-card.brand p {
+.footer-card.brand .emp {
   color: rgba(255, 255, 255, 0.85);
   line-height: 1.5;
 }
@@ -132,8 +132,8 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 3.25rem;
-  height: 3.25rem;
+  width: 3rem;
+  height: 3rem;
   border-radius: 50%;
   background-color: var(--primary-yellow);
   color: var(--blue-black);

@@ -24,7 +24,7 @@
     transition: 0.3s;
 }
 
-.header-list a:hover {
+.header-list a:hover, .nav-page a.active {
     color: var(--primary-yellow);
     border-bottom: 1px solid var(--primary-yellow);
 <<<<<<< HEAD
