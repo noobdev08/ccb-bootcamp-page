@@ -29,7 +29,7 @@ export function createShowcaseFooter(containerId = "footer-showcase-container") 
               <p class="brand-title">Bootcamp</p>
             </div>
           </div>
-          <p>
+          <p class="emp">
             Empowering the next generation of tech leaders through practical learning and innovation. We keep you
             equipped with real-world experience and the confidence to thrive in today&#39;s evolving tech landscape.
           </p>
