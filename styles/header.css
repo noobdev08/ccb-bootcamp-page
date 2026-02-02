@@ -27,6 +27,10 @@
 .header-list a:hover, .nav-page a.active {
     color: var(--primary-yellow);
     border-bottom: 1px solid var(--primary-yellow);
+<<<<<<< HEAD
+
+=======
+>>>>>>> f2cdde5b27f25558820aa2819c49c9711dc2fc8e
 }
 
 .header-logo {
@@ -35,6 +39,8 @@
 }
 
 .header-btn {
+        text-decoration: none;
+
     padding: 15px 20px;
     background-color: var(--primary-yellow);
     border: none;
