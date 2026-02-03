@@ -15,7 +15,7 @@ export function createHeader(containerId = "header") {
           <li class="nav-page"><a data-btn="home" href="/index.html">Home</a></li>
           <li class="nav-page"><a data-btn="about" href="/About.html">About</a></li>
           <li class="nav-page"><a data-btn="tracks" href="/tracks.html">Tracks</a></li>
-          <li class="nav-page"><a data-btn="testimonials" href="/testimonial.html">Testimonials</a></li>
+          <li class="nav-page"><a data-btn="testimonial" href="/testimonial.html">Testimonials</a></li>
         </ul>
       </nav>
 
@@ -27,7 +27,7 @@ export function createHeader(containerId = "header") {
 const qa = (s) => document.querySelectorAll(s);
 
 document.addEventListener("DOMContentLoaded", () => {
-  navBtn = qa(".nav-page a");
+  const navBtn = qa(".nav-page a");
   if (!navBtn.length) return;
 
   const currentPage = document.body.dataset.page;
