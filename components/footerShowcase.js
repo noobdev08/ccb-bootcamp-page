@@ -1,4 +1,6 @@
-export function createShowcaseFooter(containerId = "footer-showcase-container") {
+export function createShowcaseFooter(
+  containerId = "footer-showcase-container",
+) {
   const container = document.getElementById(containerId);
 
   if (!container) {
@@ -13,7 +15,7 @@ export function createShowcaseFooter(containerId = "footer-showcase-container") 
           <h2 class="eyebrow">Stay Updated</h3>
           <p>Get notified about new cohorts, events, and <br> important updates.</p>
         </div>
-        <form class="newsletter-form">
+        <form class="newsletter-form" action="mailto:hello@codeandcreate.com" method="post" enctype="text/plain" aria-label="Subscribe to our newsletter">
           <label class="sr-only" for="newsletter-email">Email address</label>
           <input id="newsletter-email" type="email" placeholder="Enter your email address" />
           <button type="submit">Subscribe</button>

@@ -7,65 +7,6 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-.update {
-    display: flex;
-    max-width: 1200px;
-    justify-content: space-between;
-    width: 100%;
-    height: 4%;
-    border-radius: 10px;
-    align-items: center;
-    background-color: var(--light-yellow);
-    margin: 4% 0;
-    padding: 4%;
-}
-
-.update-content {
-    color: var(--blue-black);
-    flex: 1;
-}
-
-.update-content h1 {
-    font-size: 35px;
-    margin-bottom: 3%;
-}
-
-.update-content p {
-    font-size: 20px;
-}
-
-
-.update-email {
-    flex: 1;
-    display: flex;
-    align-items: center;
-}
-
-#email {
-    flex: 1;
-    border: none;
-    padding: 17px 10px;
-    border-radius: 10px;
-    font-size: 14px;
-    color: black;
-    font-weight: bold;
-}
-
-.update-email button {
-    background-color: var(--primary-yellow);
-    border: none;
-    padding: 15px 40px;
-    border-radius: 10px;
-    font-size: 18px;
-    cursor: pointer;
-    font-weight: bold;
-}
-
-.footer-logo {
-    width: 203px;
-    height: 57px;
-}
-
 .footer-content {
     display: flex;
     justify-content: space-between;
