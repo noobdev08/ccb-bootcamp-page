@@ -1,12 +1,12 @@
 export function createFooter(containerId = "footer-container") {
-    const container = document.getElementById(containerId);
+  const container = document.getElementById(containerId);
 
-    if (!container) {
-        console.error(`Footer container #${containerId} not found`);
-        return;
-    }
+  if (!container) {
+    console.error(`Footer container #${containerId} not found`);
+    return;
+  }
 
-    container.innerHTML = `
+  container.innerHTML = `
         <footer class="site-footer">
 
         <section class="update">
@@ -30,10 +30,10 @@ export function createFooter(containerId = "footer-container") {
                         Empowering the next generation of tech leaders through practical learning and innovation. We equip young people with relevant digital skills, real-world experience, and the confidence to thrive in an evolving tech landscape.
                     </p>
                      <div class="footer-social-icons">
-                        <a href="#">
+                        <a href="https://x.com/codeandcreatehq?s21" target="_blank" aria-label="Visit us on X">
                             <img src="./assets/images/x-logo.png" alt="x-icon" class="social-icon social-x"/>
                         </a>
-                        <a href="#">
+                        <a href="https://www.linkedin.com/company/code-and-create-bootcamp" target="_blank" aria-label="Visit us on LinkedIn">
                             <img src="./assets/images/linkedln-logo.png" alt="x-icon"  class="social-icon social-linkedin"/>
                         </a>
                     </div>
