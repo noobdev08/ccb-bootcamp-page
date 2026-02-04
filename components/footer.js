@@ -1,28 +1,13 @@
 export function createFooter(containerId = "footer-container") {
-    const container = document.getElementById(containerId);
+  const container = document.getElementById(containerId);
 
-    if (!container) {
-        console.error(`Footer container #${containerId} not found`);
-        return;
-    }
+  if (!container) {
+    console.error(`Footer container #${containerId} not found`);
+    return;
+  }
 
-    container.innerHTML = `
+  container.innerHTML = `
         <footer class="site-footer">
-
-        <section class="update">
-            <div class="update-content">
-            <h1>Stay Updated</h1> 
-            <p>Get notified about new cohorts, events, and  <br> important updates.</p>
-            </div>
-
-            <div class="update-email"> 
-            <form action="mailto:hello@codeandcreate.com" method="post" enctype="text/plain">
-                <input type="email" name="email" id="email" placeholder="Enter your email address" required>
-                <button type="submit">Subscribe</button>
-            </form>
-            </<div>
-        </section>
-
             <div class="footer-content">
                 <div class="footer-brand">
                     <img src="./assets/images/logo.png" alt="Bootcamp logo" class="footer-logo"/>
@@ -30,10 +15,10 @@ export function createFooter(containerId = "footer-container") {
                         Empowering the next generation of tech leaders through practical learning and innovation. We equip young people with relevant digital skills, real-world experience, and the confidence to thrive in an evolving tech landscape.
                     </p>
                      <div class="footer-social-icons">
-                        <a href="#">
+                        <a href="https://x.com/codeandcreatehq?s21" target="_blank" aria-label="Visit us on X">
                             <img src="./assets/images/x-logo.png" alt="x-icon" class="social-icon social-x"/>
                         </a>
-                        <a href="#">
+                        <a href="https://www.linkedin.com/company/code-and-create-bootcamp" target="_blank" aria-label="Visit us on LinkedIn">
                             <img src="./assets/images/linkedln-logo.png" alt="x-icon"  class="social-icon social-linkedin"/>
                         </a>
                     </div>

@@ -1,4 +1,6 @@
-export function createShowcaseFooter(containerId = "footer-showcase-container") {
+export function createShowcaseFooter(
+  containerId = "footer-showcase-container",
+) {
   const container = document.getElementById(containerId);
 
   if (!container) {
@@ -13,7 +15,7 @@ export function createShowcaseFooter(containerId = "footer-showcase-container") 
           <h2 class="eyebrow">Stay Updated</h3>
           <p>Get notified about new cohorts, events, and <br> important updates.</p>
         </div>
-        <form class="newsletter-form">
+        <form class="newsletter-form" action="mailto:hello@codeandcreate.com" method="post" enctype="text/plain" aria-label="Subscribe to our newsletter">
           <label class="sr-only" for="newsletter-email">Email address</label>
           <input id="newsletter-email" type="email" placeholder="Enter your email address" />
           <button type="submit">Subscribe</button>
@@ -34,10 +36,10 @@ export function createShowcaseFooter(containerId = "footer-showcase-container") 
             equipped with real-world experience and the confidence to thrive in today&#39;s evolving tech landscape.
           </p>
           <div class="brand-socials">
-            <a href="#" aria-label="Visit us on X">
+            <a href="https://x.com/codeandcreatehq?s21" target="_blank" aria-label="Visit us on X">
               <img src="./assets/images/x-logo.png" alt="X icon" />
             </a>
-            <a href="#" aria-label="Visit us on LinkedIn">
+            <a href="https://www.linkedin.com/company/code-and-create-bootcamp" target="_blank" aria-label="Visit us on LinkedIn">
               <img src="./assets/images/linkedln-logo.png" alt="LinkedIn icon" />
             </a>
           </div>
@@ -46,7 +48,7 @@ export function createShowcaseFooter(containerId = "footer-showcase-container") 
         <div class="footer-card">
           <h3>Quick Links</h3>
           <ul>
-            <li><a href="/">Home</a></li>
+            <li><a href="/index.html">Home</a></li>
             <li><a href="/About.html">About</a></li>
             <li><a href="/tracks.html">Tracks</a></li>
             <li><a href="#">Admissions</a></li>
