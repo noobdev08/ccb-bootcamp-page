@@ -45,22 +45,29 @@ function createValueCards(containerSelector, data) {
                 <p>${item.desc}</p>
             </div>
         `;
-    }).join(''); 
+    }).join('');
 
     container.innerHTML = htmlContent;
 }
 
 createValueCards('.values-grid', coreValuesData);
 
-function createTeamCard(containerSelector, personName, personRole, customClass = ''){
+function createTeamCard(containerSelector, personName, personRole, customClass = '') {
     const container = document.querySelector(containerSelector);
-    
-    const bgImage = `./assets/Images/${personName}.png`;
 
-    const classAttr = customClass ? ` class="${customClass}"` : '';
-    
+    if (!container) {
+        console.error("Target container not found!");
+        return;
+    }
+
+    let finalClass = "teamCard";
+    if (customClass !== '') {
+        finalClass = "teamCard " + customClass;
+    }
+
+    const cardId = `card-${personName.replace(/\s+/g, '-')}`;
     const htmlContent = `
-        <div class="teamCard"${classAttr} style="background-image: url('${bgImage}');">
+        <div id="${cardId}" class="${finalClass}" style="background-position: center; background-size: cover; background-repeat: no-repeat;">
             <div class="banner">
                 <div class="name">
                     <h3>${personName}</h3>
@@ -73,15 +80,28 @@ function createTeamCard(containerSelector, personName, personRole, customClass =
     `;
 
     container.insertAdjacentHTML('beforeend', htmlContent);
+
+    const cardElement = document.getElementById(cardId);
+    const testImg = new Image();
+    
+    testImg.src = `./assets/Images/${personName}.png`;
+
+    testImg.onload = function() {
+        cardElement.style.backgroundImage = `url('${testImg.src}')`;
+    };
+
+    testImg.onerror = function() {
+        cardElement.style.backgroundImage = `url('./assets/Images/${personName}.jpeg')`;
+    };
 }
 
 createTeamCard('.card1', 'Oko Patricia', 'Program Manager');
 createTeamCard('.card1', 'Adina Destiny', 'Social Media Manager');
-createTeamCard('.card1', 'Dura Ogochukwu', 'Community Manager');
+createTeamCard('.card1', 'Duru Ogochukwu', 'Community Manager');
 
 // Instructors
 createTeamCard('.instructors', 'Habibu Haruna', 'Web Development');
 createTeamCard('.instructors', 'George Babalola', 'Product Design');
 createTeamCard('.instructors', 'Loretta Anyika', 'Data Analysis');
-createTeamCard('.instructors', 'Instructor\'s Name', '3D Animation');
+createTeamCard('.instructors', 'YAPPI', '3D Animation');
 createTeamCard('.instructors', 'Veloria Igweogu', 'Product Management');
