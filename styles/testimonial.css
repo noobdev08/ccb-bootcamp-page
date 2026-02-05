@@ -15,12 +15,10 @@ main {
    Hero Section
 ========================= */
 .hero-section {
-  background: linear-gradient(
-    135deg,
-    var(--primary-blue) 0%,
-    var(--deep-navy) 60%,
-    var(--primary-blue) 100%
-  );
+  background: linear-gradient(135deg,
+      var(--primary-blue) 0%,
+      var(--deep-navy) 60%,
+      var(--primary-blue) 100%);
   color: var(--white);
   padding: 5rem 2rem;
   min-height: 50vh;
@@ -48,6 +46,7 @@ main {
   background-color: var(--off-white);
   padding: 4rem 1.5rem 5rem;
 }
+
 .testimonial-section .testimonial-card-section {
   max-width: 1100px;
   margin: 0 auto;
@@ -55,6 +54,7 @@ main {
   grid-template-columns: 1fr;
   gap: 2rem;
 }
+
 /*=====================
  Container for the card 
  ======================*/
@@ -188,9 +188,11 @@ main {
   display: block;
   transition: transform 0.3s ease;
 }
+
 .project-card:hover {
   box-shadow: 0 0.25rem 1.25rem rgba(0, 0, 0, 0.15);
 }
+
 .project-card:hover img {
   transform: scale(1.05);
 }
@@ -217,14 +219,17 @@ main {
   .testimonial-section .testimonial-card-section {
     grid-template-columns: repeat(2, 1fr);
   }
+
   .project-section-content {
     padding: 0 1.8rem 5rem;
   }
 }
+
 @media (min-width: 900px) {
   .project-section-content {
     padding: 0 3rem 5rem;
   }
+
   .testimonial-section .testimonial-card-section {
     grid-template-columns: repeat(3, 1fr);
   }

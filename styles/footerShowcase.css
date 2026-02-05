@@ -80,15 +80,17 @@
   gap: 0.65rem;
   font-size: 0.9rem;
 }
+
 .footer-card.partners {
   justify-self: flex-end;
 }
 
 .footer-card.brand {
-    min-width: 340px;
+  min-width: 340px;
 }
+
 .footer-card.contact {
-    min-width: 250px;
+  min-width: 250px;
 }
 
 .footer-card h3 {

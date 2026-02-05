@@ -60,7 +60,8 @@
     background: none;
     border: none;
     cursor: pointer;
-    z-index: 1100; /* stays above drawer */
+    z-index: 1100;
+    /* stays above drawer */
 }
 
 .hamburger span {
@@ -121,7 +122,8 @@
     .header-list {
         flex-direction: column;
         padding: 2rem 1.5rem;
-        gap: 6rem; /* compact spacing */
+        gap: 6rem;
+        /* compact spacing */
         justify-content: start;
     }
 

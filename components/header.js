@@ -18,7 +18,7 @@ export function createHeader(containerId = "header") {
 
       <nav class="header-nav">
         <ul class="header-list">
-          <li class="nav-page"><a data-btn="home" href="./Home.html">Home</a></li>
+          <li class="nav-page"><a data-btn="home" href="./index.html">Home</a></li>
           <li class="nav-page"><a data-btn="about" href="./About.html">About</a></li>
           <li class="nav-page"><a data-btn="tracks" href="./tracks.html">Tracks</a></li>
           <li class="nav-page"><a data-btn="testimonial" href="./testimonial.html">Testimonials</a></li>

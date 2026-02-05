@@ -1,7 +1,5 @@
 @import url('./reset.css');
 
-
-
 .site-footer {
     background-color: var(--blue-black);
     color: var(--white);
@@ -9,41 +7,42 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-.update{
+.update {
     display: flex;
     max-width: 1200px;
-     justify-content: space-between;
+    justify-content: space-between;
     width: 100%;
     height: 4%;
     border-radius: 10px;
     align-items: center;
-    background-color:var(--light-yellow);
-    margin:4% 0;
-    padding: 4% ;
+    background-color: var(--light-yellow);
+    margin: 4% 0;
+    padding: 4%;
 }
 
-.update-content{
+.update-content {
     color: var(--blue-black);
-    flex:1;
+    flex: 1;
 }
-.update-content h1{
+
+.update-content h1 {
     font-size: 35px;
     margin-bottom: 3%;
 }
-.update-content p{
+
+.update-content p {
     font-size: 20px;
 }
 
 
-.update-email{
-    flex:1;
+.update-email {
+    flex: 1;
     display: flex;
     align-items: center;
-
 }
 
-#email{
-    flex:1;
+#email {
+    flex: 1;
     border: none;
     padding: 17px 10px;
     border-radius: 10px;
@@ -52,7 +51,7 @@
     font-weight: bold;
 }
 
-.update-email button{
+.update-email button {
     background-color: var(--primary-yellow);
     border: none;
     padding: 15px 40px;
@@ -61,8 +60,6 @@
     cursor: pointer;
     font-weight: bold;
 }
-
-
 
 .footer-logo {
     width: 203px;
@@ -89,9 +86,9 @@
     color: inherit;
 }
 
-.footer-support a{
-    text-decoration:none;
-    color:white;
+.footer-support a {
+    text-decoration: none;
+    color: white;
 }
 
 .footer-support a:hover {
@@ -150,7 +147,7 @@
 .footer-social-icons {
     display: flex;
     gap: 3rem;
-    margin:6% 0 0 15%;
+    margin: 6% 0 0 15%;
 }
 
 .social-icon {
