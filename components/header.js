@@ -23,12 +23,14 @@ export function createHeader(containerId = "header") {
           <li class="nav-page"><a data-btn="tracks" href="./tracks.html">Tracks</a></li>
           <li class="nav-page"><a data-btn="testimonial" href="./testimonial.html">Testimonials</a></li>
 
+          <!-- Mobile only -->
           <li class="mobile-cta">
             <a href="https://forms.gle/zP4DL7qA1WfreTGm8">Apply Now</a>
           </li>
         </ul>
       </nav>
 
+      <!-- Desktop only -->
       <a class="header-btn" href="https://forms.gle/zP4DL7qA1WfreTGm8">
         Apply Now
       </a>
@@ -47,19 +49,23 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const hamburger = document.querySelector(".hamburger");
   const nav = document.querySelector(".header-nav");
+  const body = document.body;
 
   if (!hamburger || !nav) return;
 
   hamburger.addEventListener("click", () => {
-    hamburger.classList.toggle("open");
-    nav.classList.toggle("open");
+    const isOpen = nav.classList.toggle("open");
+
+    hamburger.classList.toggle("open", isOpen);
+    body.classList.toggle("no-scroll", isOpen); // 🔒 lock/unlock scroll
   });
 
-  // auto-close when a link is clicked
+  // auto-close when any nav link is clicked
   qa(".header-list a").forEach((link) => {
     link.addEventListener("click", () => {
       hamburger.classList.remove("open");
       nav.classList.remove("open");
+      body.classList.remove("no-scroll"); // 🔓 restore scroll
     });
   });
 });
