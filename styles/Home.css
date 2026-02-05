@@ -579,8 +579,7 @@ hr {
    #btn-apply,
    #btn-explore {
       width: 100%;
-      font-size: 15px;
-      padding: 12px 25px;
+      font-size: 15px
    }
 
    i {
@@ -608,6 +607,7 @@ hr {
       margin: 5% 2%;
       border-radius: 20px;
       padding: 20px;
+      margin-top: 2rem;
    }
 
    .list {
