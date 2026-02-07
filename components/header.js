@@ -8,7 +8,7 @@ export function createHeader(containerId = "header") {
 
   container.innerHTML = `
     <header class="site-header">
-      <img class="header-logo" src="/assets/images/logo.png" alt="Bootcamp logo" />
+      <img class="header-logo" src="/assets/Images/logo.png" alt="Bootcamp logo" />
 
       <button class="hamburger" aria-label="Toggle navigation">
         <span></span>

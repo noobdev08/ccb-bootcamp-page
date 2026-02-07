@@ -3,7 +3,7 @@ export const tracksData = [
     id: "web-development",
     title: "Web development",
     icon: {
-      src: "assets/Images/track-icon.svg",
+      src: "/assets/Images/track-icon.svg",
       alt: "tracks icon",
     },
     description:
@@ -30,7 +30,7 @@ export const tracksData = [
     id: "product-design",
     title: "Product Design",
     icon: {
-      src: "assets/Images/track-icon.svg",
+      src: "/assets/Images/track-icon.svg",
       alt: "tracks icon",
     },
     description:
@@ -62,7 +62,7 @@ export const tracksData = [
     id: "data-analysis",
     title: "Data Analysis",
     icon: {
-      src: "assets/Images/track-icon.svg",
+      src: "/assets/Images/track-icon.svg",
       alt: "tracks icon",
     },
     description:
@@ -95,7 +95,7 @@ export const tracksData = [
     id: "product-management",
     title: "Product Management",
     icon: {
-      src: "assets/Images/track-icon.svg",
+      src: "/assets/Images/track-icon.svg",
       alt: "tracks icon",
     },
     description:
@@ -134,7 +134,7 @@ export const testimonialsData = [
     id: "jennifer-okwuori",
     name: "Jennifer Okwueri",
     track: "Product Design",
-    avatar: "assets/testimonials/jennifer.jpg",
+    avatar: "/assets/testimonials/jennifer.jpg",
     quote:
       "Joining Code and Create Bootcamp is one of the best decisions you’ll ever make. From day one, you're guided by mentors who not only teach but genuinely care about your growth. The hands-on projects, collaborative environment, and career support push you beyond your limits.",
   },
@@ -142,7 +142,7 @@ export const testimonialsData = [
     id: "adun-nosakhare",
     name: "Adun Nosakhare",
     track: "Web Development",
-    avatar: "assets/testimonials/adun.jpg",
+    avatar: "/assets/testimonials/adun.jpg",
     quote:
       "Code and Create Bootcamp gave me the chance to revisit and truly understand HTML, CSS, and JavaScript. By strengthening these fundamentals through guided practice and real projects, I was able to build the confidence and skills needed to tackle more advanced development work.",
   },
@@ -150,7 +150,7 @@ export const testimonialsData = [
     id: "hafsat-shuaibu",
     name: "Hafsat Shuaibu",
     track: "Data Analysis",
-    avatar: "assets/testimonials/hafsat.jpg",
+    avatar: "/assets/testimonials/hafsat.jpg",
     quote:
       "The Code & Create Bootcamp provided me with a solid foundation in data analysis through hands-on learning and structured mentorship. The one-on-one mentorship, soft skill webinars, and Career Week stood out, helping me grow not only technically but also professionally. I gained strong skills in data cleaning.",
   },
@@ -158,7 +158,7 @@ export const testimonialsData = [
     id: "chinweike-david",
     name: "Chinweike David",
     track: "Web Development",
-    avatar: "assets/testimonials/chinweike.jpg",
+    avatar: "/assets/testimonials/chinweike.jpg",
     quote:
       "The Code and Create Bootcamp was a highly impactful experience for me. Over the course of three months, I gained solid, hands-on skills in web development through a well-structured and practical learning process. The training pushed me to think critically, improve in problem-solving",
   },
@@ -166,7 +166,7 @@ export const testimonialsData = [
     id: "ibrahim-sofiyyah",
     name: "Ibrahim Sofiyyah",
     track: "Web Development",
-    avatar: "assets/testimonials/ibrahim.jpg",
+    avatar: "/assets/testimonials/ibrahim.jpg",
     quote:
       "The program was intensive but very rewarding, and it pushed me to grow both personally and professionally. I also had the opportunity to connect with great people and learn from supportive instructors and peers. Overall, this bootcamp has played a big role in my growth, and I’m very grateful.",
   },
@@ -174,7 +174,7 @@ export const testimonialsData = [
     id: "sarah-gabriel",
     name: "Sarah Gabriel",
     track: "Data Analysis",
-    avatar: "assets/testimonials/sarah.jpg",
+    avatar: "/assets/testimonials/sarah.jpg",
     quote:
       "Enrolling in the Data Analysis track at the Code & Create Bootcamp was a turning point in my learning journey. The program didn’t just teach tools it helped me understand how data truly drives decision-making. From data cleaning and analysis to interpreting insights for real-world projects.",
   },
@@ -182,7 +182,7 @@ export const testimonialsData = [
     id: "iwuoha-vera",
     name: "Iwuoha Vera",
     track: "Product Management",
-    avatar: "assets/testimonials/vera.jpg",
+    avatar: "/assets/testimonials/vera.jpg",
     quote:
       "Prior to the bootcamp, I always viewed tech-related skills with so much confusion and ambiguity. My decision to join Code and Create bootcamp changed my perspective about tech. During the course of the bootcamp, my mind was equipped with a good knowledge on tech especially how to manage products.",
   },
@@ -190,7 +190,7 @@ export const testimonialsData = [
     id: "bello-risikat",
     name: "Bello Risikat",
     track: "Product Management",
-    avatar: "assets/testimonials/risikat.jpg",
+    avatar: "/assets/testimonials/risikat.jpg",
     quote:
       "Completing this product management bootcamp has been a defining step in my career journey. The program equipped me with practical skills in user research, product strategy, roadmap planning, and  Project execution. The hands-on projects and mentorship made the learning experience valuable.",
   },
@@ -198,7 +198,7 @@ export const testimonialsData = [
     id: "igwe-favour",
     name: "Igwe Favour",
     track: "Product Design",
-    avatar: "assets/testimonials/favour.jpg",
+    avatar: "/assets/testimonials/favour.jpg",
     quote:
       "Code & Create bootcamp transformed how I approach tech and design. From hands-on projects to mentor feedback and a supportive community, every part of the journey challenged me to grow. I gained real skills, confidence, and a strong foundation for my tech journey.",
   },
@@ -210,21 +210,21 @@ export const testimonialsData = [
 export const projectData = [
   {
     id: "project-1",
-    image: "assets/testimonials/project1.png",
+    image: "/assets/testimonials/project1.png",
     alt: "project image",
     title: "On line learning platform <br>  by",
     team: "Edeh Evelyn, cohort 1.0",
   },
   {
     id: "project-2",
-    image: "assets/testimonials/project2.png",
+    image: "/assets/testimonials/project2.png",
     alt: "project image",
     title: "Job market dashboard <br>  by",
     team: "Team Teklen, cohort 1.0",
   },
   {
     id: "project-3",
-    image: "assets/testimonials/project3.png",
+    image: "/assets/testimonials/project3.png",
     alt: "project image",
     title: "Book club website <br>  by",
     team: "Bello Risikat, cohort 1.0",

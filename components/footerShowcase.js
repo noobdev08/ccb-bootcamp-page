@@ -37,10 +37,10 @@ export function createShowcaseFooter(
           </p>
           <div class="brand-socials">
             <a href="https://x.com/codeandcreatehq?s21" target="_blank" aria-label="Visit us on X">
-              <img src="/assets/images/x-logo.png" alt="X icon" />
+              <img src="/assets/Images/x-logo.png" alt="X icon" />
             </a>
             <a href="https://www.linkedin.com/company/code-and-create-bootcamp" target="_blank" aria-label="Visit us on LinkedIn">
-              <img src="/assets/images/linkedln-logo.png" alt="LinkedIn icon" />
+              <img src="/assets/Images/linkedln-logo.png" alt="LinkedIn icon" />
             </a>
           </div>
         </div>
