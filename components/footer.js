@@ -10,16 +10,16 @@ export function createFooter(containerId = "footer-container") {
         <footer class="site-footer">
             <div class="footer-content">
                 <div class="footer-brand">
-                    <img src="assets/images/logo.png" alt="Bootcamp logo" class="footer-logo"/>
+                    <img src="/assets/Images/logo.png" alt="Bootcamp logo" class="footer-logo"/>
                     <p class="footer-mission">
                         Empowering the next generation of tech leaders through practical learning and innovation. We equip young people with relevant digital skills, real-world experience, and the confidence to thrive in an evolving tech landscape.
                     </p>
                      <div class="footer-social-icons">
                         <a href="https://x.com/codeandcreatehq?s21" target="_blank" aria-label="Visit us on X">
-                            <img src="assets/Images/x-logo.png" alt="x-icon" class="social-icon social-x"/>
+                            <img src="/assets/Images/x-logo.png" alt="x-icon" class="social-icon social-x"/>
                         </a>
                         <a href="https://www.linkedin.com/company/code-and-create-bootcamp" target="_blank" aria-label="Visit us on LinkedIn">
-                            <img src="assets/Images/linkedln-logo.png" alt="x-icon"  class="social-icon social-linkedin"/>
+                            <img src="/assets/Images/linkedln-logo.png" alt="x-icon"  class="social-icon social-linkedin"/>
                         </a>
                     </div>
                 </div>
