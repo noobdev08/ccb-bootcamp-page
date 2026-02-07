@@ -43,7 +43,7 @@ tracksContainer.innerHTML = tracksData
 
         <footer class="track-card-footer">
           <p class="track-card-duration">${track.duration}</p>
-          <button class="apply" type="button" onclick="window.location.href='https://forms.gle/zP4DL7qA1WfreTGm8'">
+          <button class="apply" type="button">
             ${track.ctaLabel}
           </button>
         </footer>

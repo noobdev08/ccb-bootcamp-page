@@ -18,7 +18,7 @@ export function createShowcaseFooter(
         <form class="newsletter-form" action="mailto:hello@codeandcreate.com" method="post" enctype="text/plain" aria-label="Subscribe to our newsletter">
           <label class="sr-only" for="newsletter-email">Email address</label>
           <input id="newsletter-email" type="email" placeholder="Enter your email address" />
-          <button type="submit" onclick="window.location.href='mailto:hello@codeandcreate.com';">Subscribe</button>
+          <button type="submit">Subscribe</button>
         </form>
       </section>
 
@@ -37,10 +37,10 @@ export function createShowcaseFooter(
           </p>
           <div class="brand-socials">
             <a href="https://x.com/codeandcreatehq?s21" target="_blank" aria-label="Visit us on X">
-              <img src="./assets/images/x-logo.png" alt="X icon" />
+              <img src="/assets/images/x-logo.png" alt="X icon" />
             </a>
             <a href="https://www.linkedin.com/company/code-and-create-bootcamp" target="_blank" aria-label="Visit us on LinkedIn">
-              <img src="./assets/images/linkedln-logo.png" alt="LinkedIn icon" />
+              <img src="/assets/images/linkedln-logo.png" alt="LinkedIn icon" />
             </a>
           </div>
         </div>
@@ -76,7 +76,7 @@ export function createShowcaseFooter(
       </section>
 
       <section class="footer-meta">
-        <p>&copy; 2025 Code&Create. All rights reserved.</p>
+        <p>&copy; 2026 Code&Create. All rights reserved.</p>
         <div class="meta-links">
           <a href="#">Privacy Policy</a>
           <a href="#">Terms Of Service</a>
