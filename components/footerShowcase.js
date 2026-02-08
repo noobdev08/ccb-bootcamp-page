@@ -18,7 +18,7 @@ export function createShowcaseFooter(
         <form class="newsletter-form" action="mailto:hello@codeandcreate.com" method="post" enctype="text/plain" aria-label="Subscribe to our newsletter">
           <label class="sr-only" for="newsletter-email">Email address</label>
           <input id="newsletter-email" type="email" placeholder="Enter your email address" />
-          <button type="submit">Subscribe</button>
+          <button type="submit" onclick="window.location.href='mailto:hello@codeandcreate.com';">Subscribe</button>
         </form>
       </section>
 
