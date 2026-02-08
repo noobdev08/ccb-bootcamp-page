@@ -2,13 +2,14 @@
 /*Global Reset CSS file*/
 @import url('./header.css');
 /*Importing header styles*/
-@import url('./footer.css');
+@import url('./footerShowcase.css');
 /*Importing footer styles*/
 
 :root {
    --primary-yellow: #EA9F1E;
    --primary-blue: #023352;
-   --deep-navy: #F7F9FA;
+  --deep-navy: #011e2a;
+   --off-white: #F7F9FA;
    --soft-blue: #5DA7D1;
    --white: #ffffff;
    --soft-white: ;
@@ -123,7 +124,7 @@ i {
    width: auto;
    height: auto;
    border-radius: 40px;
-   background-color: var(--deep-navy);
+   background-color: var(--off-white);
    margin: 0 3%;
    box-shadow: 1px 1px 10px 1px var(--blue-black);
 }

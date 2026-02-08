@@ -1,8 +1,8 @@
 import { createHeader } from "../components/header.js";
-import { createFooter } from "../components/footer.js";
+import { createShowcaseFooter } from "../components/footerShowcase.js";
 
 createHeader("header");
-createFooter("footer-container");
+createShowcaseFooter("footer-showcase-container");
 
 // Roll Number Animation Function
 function rollNumber(elementId, finalNumber, duration = 2000, showPlus = false) {

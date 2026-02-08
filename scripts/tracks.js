@@ -51,3 +51,17 @@ tracksContainer.innerHTML = tracksData
     `;
   })
   .join("");
+
+document.addEventListener("DOMContentLoaded", () => {
+  const qa = (s) => document.querySelectorAll(s);
+
+  const applyBtn = qa(".apply");
+
+  applyBtn.forEach((btn) => {
+    btn.addEventListener("click", (e) => {
+      let x = e.target.tagName;
+      if (!x === "BUTTON") return;
+      window.open("https://forms.gle/zP4DL7qA1WfreTGm8", "_blank");
+    });
+  });
+});
