@@ -111,23 +111,26 @@ let touchStartX = 0;
 let touchEndX = 0;
 
 function loadTestimonial(index) {
-    card.style.opacity = 0;
+  // remove show class to trigger slide-out
+  card.classList.remove('show');
 
-    setTimeout(() => {
-    document.getElementById("userName").textContent=testimonials[index].name;
+  // wait for slide-out to finish, then update content and slide-in
+  setTimeout(() => {
+  document.getElementById("userName").textContent = testimonials[index].name;
 
-    document.getElementById("userText").textContent=testimonials[index].text;
+  document.getElementById("userText").textContent = testimonials[index].text;
 
-    document.getElementById("userCohort").textContent=testimonials[index].cohort;
+  document.getElementById("userCohort").textContent = testimonials[index].cohort;
 
-    document.getElementById("userImage").src=testimonials[index].image;
+  document.getElementById("userImage").src = testimonials[index].image;
 
-    document.getElementById("userStatus").textContent=testimonials[index].status;
+  document.getElementById("userStatus").textContent = testimonials[index].status;
 
-    document.getElementById("userTrack").textContent=testimonials[index].track;
+  document.getElementById("userTrack").textContent = testimonials[index].track;
 
-    card.style.opacity = 1;
-    }, 200);
+  // add class to animate slide-in
+  requestAnimationFrame(() => card.classList.add('show'));
+  }, 300);
 }
 
 
@@ -174,17 +177,30 @@ loadTestimonial(currentIndex);
 
 const faqs = document.querySelectorAll(".faq-item");
 
-faqs.forEach((faq) => {
-  faq.addEventListener("click", () => {
-
-    faqs.forEach(item => {
-        if (item !== faq){
-            item.classList.remove("active");
-        }
-    });
-
-        faq.classList.toggle("active");
-
+if (faqs.length) {
+  faqs.forEach(faq => {
+    const ans = faq.querySelector('.faq-answer');
+    faq.setAttribute('aria-expanded', 'false');
+    if (ans) ans.setAttribute('aria-hidden', 'true');
   });
-});
+
+  faqs.forEach((faq) => {
+    faq.addEventListener("click", () => {
+      faqs.forEach(item => {
+        if (item !== faq) {
+          item.classList.remove("active");
+          item.setAttribute('aria-expanded', 'false');
+          const a = item.querySelector('.faq-answer');
+          if (a) a.setAttribute('aria-hidden', 'true');
+        }
+      });
+
+      faq.classList.toggle("active");
+      const isActive = faq.classList.contains('active');
+      faq.setAttribute('aria-expanded', String(isActive));
+      const answer = faq.querySelector('.faq-answer');
+      if (answer) answer.setAttribute('aria-hidden', String(!isActive));
+    });
+  });
+}
 

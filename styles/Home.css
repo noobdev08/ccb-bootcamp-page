@@ -68,12 +68,22 @@ body {
     display:flex;
     margin:8% 0 2% 0;
     gap:15%;
+    margin-bottom: 1.5rem;
  }
- 
- i{
-    font-size:20px;
-    padding-top:4%;
- }
+
+/* wrapper for the cohort line below the intro buttons */
+.i{
+   display: block;
+   margin-top: 5%;
+}
+
+/* style only the italic/cohort text, remove extra top padding that caused overlap */
+.i i{
+   font-size:18px;
+   padding-top: 2%;
+   font-style: italic;
+   color: var(--blue-black);
+}
  #btn-apply{
    text-decoration: none;
     padding:15px 35px;
@@ -332,6 +342,10 @@ padding:20px 0;
 
  }
 
+.testimony{
+   position: relative;
+}
+
  .testimonial-card{
    background-image: url(../assets/Images/bg2.png);
    background-color: var(--primary-blue);
@@ -344,9 +358,10 @@ padding:20px 0;
 }
 
 #userImage{
-   width: 321px;;
-   height:328px;
-   border-radius:5%;
+   width: 320px;
+   height: 320px;
+   object-fit: cover;
+   border-radius:8px;
 }
 
 #userText{
@@ -378,18 +393,21 @@ padding:20px 0;
 #prev,#next {
   position: absolute;
   background: var(--primary-yellow);
-  color:black;
+  color: black;
   border: none;
   padding: 8px 12px;
   cursor: pointer;
   border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
 }
 
 #prev {
-   right:95%;
+   left: 12px;
 }
 #next {
-   left:95%;
+   right: 12px;
 }
 
 #body-faqs{
@@ -451,18 +469,21 @@ padding:20px 0;
 }
 
 .faq-answer {
-  display: none;
-  color: black;
-  margin-top: 10px;
-  line-height: 1.6;
-  overflow: hidden;
-  max-height: 0;
-
+   color: black;
+   margin-top: 0;
+   line-height: 1.6;
+   overflow: hidden;
+   max-height: 0;
+   opacity: 0;
+   padding-top: 0;
+   transition: max-height 0.3ms ease, opacity 0.7ms ease, margin 0.3s ease, padding 0.3s ease;
 }
 
 .faq-item.active .faq-answer {
-  display: block;
-  max-height: 300px;
+   max-height: 800px;
+   opacity: 1;
+   margin-top: 10px;
+   padding-top: 8px;
 }
 
 .cta{
@@ -545,28 +566,29 @@ padding:20px 0;
       line-height: 130%;
    }
 
-   .btn-intro a{
+   .btn-intro {
       display: flex;
       flex-direction: column;
-      margin: 10% 0 5% 0;
-      gap: 15px;
+      gap: 50px;
       width: 100%;
    }
 
-   .btn-intro div {
-      width: 100%;
-   }
 
-   #btn-apply,
-   #btn-explore {
-      width: 100%;
+   #btn-apply{
       font-size: 16px;
-      padding: 12px 25px;
+      padding: 15px 150px;
    }
 
-   i {
-      font-size: 14px;
+   #btn-explore {
+      font-size: 16px;
+      padding: 15px 135px;
    }
+
+i{
+   display: block;
+   margin-top: 5%;
+}
+
 
    #intro-img {
       position: relative;
@@ -586,7 +608,7 @@ padding:20px 0;
    #accomplishment {
       position: relative;
       top: 0;
-      margin: 5% 2%;
+      margin: 15% 2% 5% 2%;
       border-radius: 20px;
       padding: 20px;
    }
@@ -773,7 +795,8 @@ padding:20px 0;
    #userImage {
       width: 100%;
       max-width: 250px;
-      height: auto;
+      height: 250px;
+      object-fit: cover;
       margin: 0 auto;
       display: block;
    }
@@ -782,6 +805,18 @@ padding:20px 0;
       margin: 0;
       font-size: 16px;
       line-height: 1.6;
+   }
+
+   /* animation target for testimonial content */
+   .testimonial-inner{
+      opacity: 0;
+      transform: translateX(18px);
+      transition: opacity 0.38s ease, transform 0.38s ease;
+   }
+
+   .testimonial-card.show .testimonial-inner{
+      opacity: 1;
+      transform: translateX(0);
    }
 
    #userName {
@@ -888,3 +923,4 @@ padding:20px 0;
       font-size: 16px;
       margin: 6% 0;
    }
+}
