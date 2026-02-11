@@ -8,7 +8,7 @@ export function createHeader(containerId = 'header') {
 
   container.innerHTML = `
     <header class="site-header">
-      <div class="brand-lockup">
+      <div class="brand-lockup" id="logo">
         <span class="brand-icon">&lt;/&gt;</span>
         <div>
           <p class="brand-eyebrow">Code&Create</p>
@@ -48,6 +48,13 @@ const qa = (s) => document.querySelectorAll(s);
 
 document.addEventListener('DOMContentLoaded', () => {
   const currentPage = document.body.dataset.page;
+  const logo = document.getElementById('logo');
+
+  if (logo) {
+    logo.addEventListener('click', () => {
+      window.location.href = './index.html';
+    });
+  }
 
   qa('.nav-page a').forEach((link) => {
     link.classList.toggle('active', link.dataset.btn === currentPage);
