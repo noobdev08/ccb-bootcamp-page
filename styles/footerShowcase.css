@@ -1,4 +1,4 @@
-@import url("./reset.css");
+@import url('./reset.css');
 
 .showcase-footer {
   background-color: var(--blue-black);
@@ -121,13 +121,14 @@
 .footer-card.brand .emp {
   color: rgba(255, 255, 255, 0.85);
   line-height: 1.5;
+  margin: 1rem 0 .8rem;
 }
 
 .brand-lockup {
   display: flex;
   align-items: center;
   gap: 0.75rem;
-  margin-bottom: 1rem;
+  color: var(--white);
 }
 
 .brand-icon {
@@ -159,7 +160,6 @@
 .brand-socials {
   display: flex;
   gap: 0.8rem;
-  margin-top: .8rem;
 }
 
 .brand-socials img {
@@ -248,5 +248,8 @@
 
   .newsletter-form button {
     width: 100%;
+  }
+  .footer-meta {
+    flex-direction: column;
   }
 }
