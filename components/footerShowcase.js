@@ -13,7 +13,7 @@ export function createShowcaseFooter(
       <section class="newsletter-panel">
         <div class="newsletter-copy">
           <h2 class="eyebrow">Stay Updated</h3>
-          <p>Get notified about new cohorts, events, and <br> important updates.</p>
+          <p>Get notified about new cohorts, events, and important updates.</p>
         </div>
         <form class="newsletter-form" action="mailto:hello@codeandcreate.com" method="post" enctype="text/plain" aria-label="Subscribe to our newsletter">
           <label class="sr-only" for="newsletter-email">Email address</label>

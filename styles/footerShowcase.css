@@ -25,6 +25,10 @@
   flex: 1;
 }
 
+.newsletter-copy p {
+  min-width: 25rem;
+}
+
 .newsletter-copy .eyebrow {
   font-weight: 800;
   margin-bottom: 0.5rem;
@@ -121,7 +125,7 @@
 .footer-card.brand .emp {
   color: rgba(255, 255, 255, 0.85);
   line-height: 1.5;
-  margin: 1rem 0 .8rem;
+  margin: 1rem 0 0.8rem;
 }
 
 .brand-socials {
@@ -143,6 +147,7 @@
 
 .contact-list a {
   color: inherit;
+  text-decoration: underline;
 }
 
 .footer-meta {
@@ -216,6 +221,15 @@
   .newsletter-form button {
     width: 100%;
   }
+
+  .newsletter-copy p {
+    min-width: 100%;
+  }
+
+  .footer-card.brand {
+    min-width: 100%;
+  }
+
   .footer-meta {
     flex-direction: column;
   }
