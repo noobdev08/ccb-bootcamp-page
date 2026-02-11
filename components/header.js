@@ -1,4 +1,4 @@
-export function createHeader(containerId = "header") {
+export function createHeader(containerId = 'header') {
   const container = document.getElementById(containerId);
 
   if (!container) {
@@ -8,7 +8,13 @@ export function createHeader(containerId = "header") {
 
   container.innerHTML = `
     <header class="site-header">
-      <img class="header-logo" src="/assets/Images/logo.png" alt="Bootcamp logo" />
+      <div class="brand-lockup" id="logo">
+        <span class="brand-icon">&lt;/&gt;</span>
+        <div>
+          <p class="brand-eyebrow">Code&Create</p>
+          <p class="brand-title">Bootcamp</p>
+        </div>
+      </div>
 
       <button class="hamburger" aria-label="Toggle navigation">
         <span></span>
@@ -40,32 +46,39 @@ export function createHeader(containerId = "header") {
 
 const qa = (s) => document.querySelectorAll(s);
 
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener('DOMContentLoaded', () => {
   const currentPage = document.body.dataset.page;
+  const logo = document.getElementById('logo');
 
-  qa(".nav-page a").forEach((link) => {
-    link.classList.toggle("active", link.dataset.btn === currentPage);
+  if (logo) {
+    logo.addEventListener('click', () => {
+      window.location.href = './index.html';
+    });
+  }
+
+  qa('.nav-page a').forEach((link) => {
+    link.classList.toggle('active', link.dataset.btn === currentPage);
   });
 
-  const hamburger = document.querySelector(".hamburger");
-  const nav = document.querySelector(".header-nav");
+  const hamburger = document.querySelector('.hamburger');
+  const nav = document.querySelector('.header-nav');
   const body = document.body;
 
   if (!hamburger || !nav) return;
 
-  hamburger.addEventListener("click", () => {
-    const isOpen = nav.classList.toggle("open");
+  hamburger.addEventListener('click', () => {
+    const isOpen = nav.classList.toggle('open');
 
-    hamburger.classList.toggle("open", isOpen);
-    body.classList.toggle("no-scroll", isOpen); // 🔒 lock/unlock scroll
+    hamburger.classList.toggle('open', isOpen);
+    body.classList.toggle('no-scroll', isOpen); // 🔒 lock/unlock scroll
   });
 
   // auto-close when any nav link is clicked
-  qa(".header-list a").forEach((link) => {
-    link.addEventListener("click", () => {
-      hamburger.classList.remove("open");
-      nav.classList.remove("open");
-      body.classList.remove("no-scroll"); // 🔓 restore scroll
+  qa('.header-list a').forEach((link) => {
+    link.addEventListener('click', () => {
+      hamburger.classList.remove('open');
+      nav.classList.remove('open');
+      body.classList.remove('no-scroll'); // 🔓 restore scroll
     });
   });
 });

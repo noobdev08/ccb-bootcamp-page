@@ -1,4 +1,4 @@
-@import url("./reset.css");
+@import url('./reset.css');
 
 .showcase-footer {
   background-color: var(--blue-black);
@@ -23,6 +23,10 @@
 
 .newsletter-copy {
   flex: 1;
+}
+
+.newsletter-copy p {
+  min-width: 25rem;
 }
 
 .newsletter-copy .eyebrow {
@@ -121,45 +125,12 @@
 .footer-card.brand .emp {
   color: rgba(255, 255, 255, 0.85);
   line-height: 1.5;
-}
-
-.brand-lockup {
-  display: flex;
-  align-items: center;
-  gap: 0.75rem;
-  margin-bottom: 1rem;
-}
-
-.brand-icon {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 3rem;
-  height: 3rem;
-  border-radius: 50%;
-  background-color: var(--primary-yellow);
-  color: var(--blue-black);
-  font-weight: 700;
-  font-size: 1.5rem;
-}
-
-.brand-eyebrow {
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  font-size: 0.8rem;
-  margin: 0;
-}
-
-.brand-title {
-  font-size: 1.3rem;
-  font-weight: 700;
-  margin: 0;
+  margin: 1rem 0 0.8rem;
 }
 
 .brand-socials {
   display: flex;
   gap: 0.8rem;
-  margin-top: .8rem;
 }
 
 .brand-socials img {
@@ -176,6 +147,7 @@
 
 .contact-list a {
   color: inherit;
+  text-decoration: underline;
 }
 
 .footer-meta {
@@ -248,5 +220,17 @@
 
   .newsletter-form button {
     width: 100%;
+  }
+
+  .newsletter-copy p {
+    min-width: 100%;
+  }
+
+  .footer-card.brand {
+    min-width: 100%;
+  }
+
+  .footer-meta {
+    flex-direction: column;
   }
 }

@@ -9,9 +9,37 @@
 }
 
 /* LOGO */
-.header-logo {
-    width: 186px;
-    height: 53px;
+.brand-lockup {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: var(--white);
+}
+
+.brand-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background-color: var(--primary-yellow);
+  color: var(--blue-black);
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.brand-eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-size: 0.8rem;
+  margin: 0;
+}
+
+.brand-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin: 0;
 }
 
 /* DESKTOP NAV */
