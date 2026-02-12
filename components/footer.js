@@ -10,7 +10,14 @@ export function createFooter(containerId = "footer-container") {
         <footer class="site-footer">
             <div class="footer-content">
                 <div class="footer-brand">
-                    <img src="/assets/Images/logo.png" alt="Bootcamp logo" class="footer-logo"/>
+                    <div class="brand-lockup footer-logo" id="logo">
+                      <span class="brand-icon">&lt;/&gt;</span>
+                      <div>
+                        <p class="brand-eyebrow">Code&Create</p>
+                        <p class="brand-title">Bootcamp</p>
+                      </div>
+                    </div>
+
                     <p class="footer-mission">
                         Empowering the next generation of tech leaders through practical learning and innovation. We equip young people with relevant digital skills, real-world experience, and the confidence to thrive in an evolving tech landscape.
                     </p>

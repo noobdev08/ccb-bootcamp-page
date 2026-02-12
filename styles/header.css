@@ -17,6 +17,9 @@
   user-select: none;
   -webkit-user-select: none;
 }
+.brand-lockup.footer-logo {
+  margin-bottom: 1.3rem;
+}
 
 .brand-icon {
   display: inline-flex;
