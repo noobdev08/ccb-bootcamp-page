@@ -1,0 +1,52 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="420"
+  height="80"
+  viewBox="0 0 420 80"
+  fill="none"
+>
+  <defs>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&amp;display=swap");
+    </style>
+  </defs>
+  <!-- Icon -->
+  <circle cx="40" cy="40" r="24" fill="#ea9f1e" />
+
+  <text
+    x="40"
+    y="40"
+    text-anchor="middle"
+    dominant-baseline="central"
+    dy="0.05em"
+    font-size="28"
+    font-weight="700"
+    fill="#0f172a"
+    font-family="'Montserrat', Arial, Helvetica, sans-serif"
+  >
+    &lt;/&gt;
+  </text>
+
+  <!-- Text block -->
+  <text
+    x="70"
+    y="32"
+    font-size="13"
+    letter-spacing="0.08em"
+    fill="#ffffff"
+    font-family="'Montserrat', Arial, Helvetica, sans-serif"
+  >
+    CODE&amp;CREATE
+  </text>
+
+  <text
+    x="70"
+    y="54"
+    font-size="21"
+    font-weight="700"
+    fill="#ffffff"
+    font-family="'Montserrat', Arial, Helvetica, sans-serif"
+  >
+    BOOTCAMP
+  </text>
+</svg>
