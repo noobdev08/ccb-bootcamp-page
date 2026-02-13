@@ -66,7 +66,7 @@ export const tracksData = [
       alt: "tracks icon",
     },
     description:
-      "The Data Analysis track is designed to equip learners with the skills to collect, clean, analyze, and visualize data to make informed decisions. It focuses on transforming raw data into meaningful insights using statistical methods, tools, and real-world datasets.h",
+      "The Data Analysis track is designed to equip learners with the skills to collect, clean, analyze, and visualize data to make informed decisions. It focuses on transforming raw data into meaningful insights using statistical methods, tools, and real-world datasets.",
     learningsHeading: "What you will learn",
     learnings: [
       "Data Collection & Cleaning ",
@@ -213,7 +213,7 @@ export const projectData = [
     image: "/assets/testimonials/project1.png",
     alt: "project image",
     title: "On line learning platform <br>  by",
-    team: "Edeh Evelyn, cohort 1.0",
+    team: "Team Teklen, cohort 1.0",
   },
   {
     id: "project-2",

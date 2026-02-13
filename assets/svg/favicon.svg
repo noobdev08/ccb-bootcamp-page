@@ -1,0 +1,28 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="48"
+  height="48"
+  viewBox="0 0 48 48"
+>
+  <defs>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&amp;display=swap");
+    </style>
+  </defs>
+  
+  <circle cx="24" cy="24" r="24" fill="#ea9f1e" />
+
+  <text
+    x="24"
+    y="24"
+    text-anchor="middle"
+    dominant-baseline="central"
+    dy="0.05em"
+    font-size="28"
+    font-weight="700"
+    fill="#0f172a"
+    font-family="'Montserrat', Arial, Helvetica, sans-serif"
+  >
+    &lt;/&gt;
+  </text>
+</svg>

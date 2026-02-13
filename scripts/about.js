@@ -8,7 +8,7 @@ const coreValuesData = [
     {
         title: "Innovation",
         icon: "./assets/Images/bulb.png",
-        desc: "We encourage creative thinking and problem-solving, empowering learners to explore new ideas and build solutions that matter."
+        desc: "We encourage creative thinking and problem-solving skills, empowering learners to explore new ideas and build solutions that matter."
     },
     {
         title: "Practicality",
@@ -18,7 +18,7 @@ const coreValuesData = [
     {
         title: "Growth",
         icon: "./assets/Images/arrow.png",
-        desc: "We believe in continuous learning and personal development, supporting our learners as they build confidence."
+        desc: "We believe in continuous learning and personal development, supporting our learners as they build confidence and skills."
     },
     {
         title: "Accessibility",
