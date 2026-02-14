@@ -8,7 +8,7 @@ const coreValuesData = [
     {
         title: "Innovation",
         icon: "./assets/Images/bulb.png",
-        desc: "We encourage creative thinking and problem-solving skills, empowering learners to explore new ideas and build solutions that matter."
+        desc: "We encourage creative thinking and problem-solving, empowering learners to explore new ideas and build solutions that matter."
     },
     {
         title: "Practicality",
