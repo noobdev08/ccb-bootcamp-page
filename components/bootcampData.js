@@ -220,7 +220,7 @@ export const projectData = [
     image: "/assets/testimonials/project2.png",
     alt: "project image",
     title: "Job market dashboard <br>  by",
-    team: "Team Teklen, cohort 1.0",
+    team: "Evlyn Edeh, cohort 1.0",
   },
   {
     id: "project-3",
