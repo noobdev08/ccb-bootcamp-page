@@ -35,7 +35,7 @@ export function createFooter(containerId = "footer-container") {
                     <h3 class="footer-heading">Quick Links</h3>
                     <ul>
                         <li><a href="/index.html">Home</a></li>
-                        <li><a href="/About.html">About</a></li>
+                        <li><a href="/about.html">About</a></li>
                         <li><a href="/tracks.html">Tracks</a></li>
                         <li><a href="https://forms.gle/zP4DL7qA1WfreTGm8" target="_blank">Admissions</a></li>
                         <li><a href="#">Announcements</a></li>

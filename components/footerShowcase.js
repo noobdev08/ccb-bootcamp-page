@@ -49,7 +49,7 @@ export function createShowcaseFooter(
           <h3>Quick Links</h3>
           <ul>
             <li><a href="/index.html">Home</a></li>
-            <li><a href="/About.html">About</a></li>
+            <li><a href="/about.html">About</a></li>
             <li><a href="/tracks.html">Tracks</a></li>
             <li><a href="#">Admissions</a></li>
             <li><a href="#">Announcements</a></li>
