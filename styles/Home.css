@@ -904,4 +904,15 @@ hr {
     font-size: 16px;
     margin: 6% 0;
   }
+
+  #userText {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  .profile {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
 }

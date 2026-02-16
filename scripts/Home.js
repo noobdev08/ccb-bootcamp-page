@@ -111,9 +111,6 @@ let touchStartX = 0;
 let touchEndX = 0;
 
 function loadTestimonial(index) {
-    card.style.opacity = 0;
-
-    setTimeout(() => {
     document.getElementById("userName").textContent=testimonials[index].name;
 
     document.getElementById("userText").textContent=testimonials[index].text;
@@ -125,9 +122,6 @@ function loadTestimonial(index) {
     document.getElementById("userStatus").textContent=testimonials[index].status;
 
     document.getElementById("userTrack").textContent=testimonials[index].track;
-
-    card.style.opacity = 1;
-    }, 200);
 }
 
 
